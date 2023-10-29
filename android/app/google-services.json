@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "571709654987",
+    "firebase_url": "https://superb-flag-254215.firebaseio.com",
+    "project_id": "superb-flag-254215",
+    "storage_bucket": "superb-flag-254215.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571709654987:android:90082547b4678d8c0c984e",
+        "android_client_info": {
+          "package_name": "com.huynh.listar_flutter_pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571709654987-o7g4dmm3215ul83qddkrvheb99l456s3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-uTYs0Ue2LJH9WDwYf9qE1xV55L_57qY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571709654987-o7g4dmm3215ul83qddkrvheb99l456s3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "571709654987-a5iq3019ihvmr80uj3ecqf8re7gbis91.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.huynh.listarFlutterExtend"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-8318136058462894~6986590261"
+    }
+  ],
+  "configuration_version": "1"
+}

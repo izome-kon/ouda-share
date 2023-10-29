@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>571709654987-a5iq3019ihvmr80uj3ecqf8re7gbis91.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.571709654987-a5iq3019ihvmr80uj3ecqf8re7gbis91</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAEr9CHVSIaZoTIXBrT5JpWecrj1Bukxzc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>571709654987</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.huynh.listarFlutterExtend</string>
+	<key>PROJECT_ID</key>
+	<string>superb-flag-254215</string>
+	<key>STORAGE_BUCKET</key>
+	<string>superb-flag-254215.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:571709654987:ios:52b0fc754db4122e0c984e</string>
+	<key>DATABASE_URL</key>
+	<string>https://superb-flag-254215.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-8318136058462894~7546839370</string>
+</dict>
+</plist>
