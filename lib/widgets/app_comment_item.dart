@@ -118,7 +118,7 @@ class AppCommentItem extends StatelessWidget {
           item!.postName,
           style: Theme.of(context)
               .textTheme
-              .bodyText1
+              .bodySmall
               ?.copyWith(fontWeight: FontWeight.bold),
         ),
       );
@@ -198,13 +198,13 @@ class AppCommentItem extends StatelessWidget {
                               maxLines: 1,
                               style: Theme.of(context)
                                   .textTheme
-                                  .subtitle2!
+                                  .titleMedium!
                                   .copyWith(fontWeight: FontWeight.bold),
                             ),
                           ),
                           Text(
                             item!.createDate.dateView,
-                            style: Theme.of(context).textTheme.caption,
+                            style: Theme.of(context).textTheme.bodySmall,
                           )
                         ],
                       ),
@@ -234,7 +234,7 @@ class AppCommentItem extends StatelessWidget {
           Text(
             item!.comment,
             maxLines: 5,
-            style: Theme.of(context).textTheme.bodyText1,
+            style: Theme.of(context).textTheme.bodySmall,
           )
         ],
       ),

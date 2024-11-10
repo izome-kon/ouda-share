@@ -123,7 +123,7 @@ class _OpenTimeState extends State<OpenTime> {
                   Translate.of(context).translate(item.key),
                   style: Theme.of(context)
                       .textTheme
-                      .subtitle1!
+                      .titleMedium!
                       .copyWith(fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 4),

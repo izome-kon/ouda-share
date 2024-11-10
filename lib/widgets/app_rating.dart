@@ -23,14 +23,14 @@ class AppRating extends StatelessWidget {
                   "0.0",
                   style: Theme.of(context)
                       .textTheme
-                      .headline2!
+                      .headlineSmall!
                       .copyWith(color: Theme.of(context).primaryColor),
                 ),
                 Text(
                   "${Translate.of(context).translate('out_of')} 0",
                   style: Theme.of(context)
                       .textTheme
-                      .subtitle1!
+                      .titleMedium!
                       .copyWith(fontWeight: FontWeight.bold),
                 ),
               ],
@@ -194,7 +194,7 @@ class AppRating extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         "Loading",
-                        style: Theme.of(context).textTheme.subtitle2,
+                        style: Theme.of(context).textTheme.titleMedium,
                       ),
                     ],
                   )
@@ -215,14 +215,14 @@ class AppRating extends StatelessWidget {
               "${rate!.avg}",
               style: Theme.of(context)
                   .textTheme
-                  .headline2!
+                  .headlineSmall!
                   .copyWith(color: Theme.of(context).primaryColor),
             ),
             Text(
               "${Translate.of(context).translate('out_of')} 5",
               style: Theme.of(context)
                   .textTheme
-                  .subtitle1!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
           ],
@@ -459,7 +459,7 @@ class AppRating extends StatelessWidget {
                     "${rate!.total} ${Translate.of(context).translate('rating')}",
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle2!
+                        .titleMedium!
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                 ],

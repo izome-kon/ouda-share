@@ -68,7 +68,7 @@ class AppButton extends StatelessWidget {
               children: <Widget>[
                 Text(
                   text,
-                  style: Theme.of(context).textTheme.button!.copyWith(
+                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
                       color: Theme.of(context).primaryColor,
                       fontWeight: FontWeight.bold),
                 ),
@@ -92,7 +92,7 @@ class AppButton extends StatelessWidget {
             children: <Widget>[
               Text(
                 text,
-                style: Theme.of(context).textTheme.button!.copyWith(
+                style: Theme.of(context).textTheme.bodySmall!.copyWith(
                     color: Theme.of(context).primaryColor,
                     fontWeight: FontWeight.bold),
               ),
@@ -113,7 +113,7 @@ class AppButton extends StatelessWidget {
               children: <Widget>[
                 Text(
                   text,
-                  style: Theme.of(context).textTheme.button!.copyWith(
+                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
                       color: Theme.of(context).primaryColor,
                       fontWeight: FontWeight.bold),
                 ),
@@ -131,7 +131,7 @@ class AppButton extends StatelessWidget {
             children: <Widget>[
               Text(
                 text,
-                style: Theme.of(context).textTheme.button!.copyWith(
+                style: Theme.of(context).textTheme.bodySmall!.copyWith(
                     color: Theme.of(context).primaryColor,
                     fontWeight: FontWeight.bold),
               ),
@@ -157,7 +157,7 @@ class AppButton extends StatelessWidget {
               children: <Widget>[
                 Text(
                   text,
-                  style: Theme.of(context).textTheme.button!.copyWith(
+                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
                 _buildLoading(context)
@@ -182,7 +182,7 @@ class AppButton extends StatelessWidget {
                 text,
                 style: Theme.of(context)
                     .textTheme
-                    .button!
+                    .bodySmall!
                     .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
               ),
               _buildLoading(context)

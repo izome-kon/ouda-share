@@ -214,7 +214,7 @@ class _SettingState extends State<Setting> {
                     AppLanguage.getGlobalLanguageName(
                       AppBloc.languageCubit.state.languageCode,
                     ),
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   RotatedBox(
                     quarterTurns: AppLanguage.isRTL() ? 2 : 0,
@@ -261,7 +261,7 @@ class _SettingState extends State<Setting> {
                         AppBloc.themeCubit.state.darkOption,
                       ),
                     ),
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   RotatedBox(
                     quarterTurns: AppLanguage.isRTL() ? 2 : 0,
@@ -282,7 +282,7 @@ class _SettingState extends State<Setting> {
                 children: <Widget>[
                   Text(
                     AppBloc.themeCubit.state.font,
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   RotatedBox(
                     quarterTurns: AppLanguage.isRTL() ? 2 : 0,
@@ -301,7 +301,7 @@ class _SettingState extends State<Setting> {
                 children: <Widget>[
                   Text(
                     Application.domain,
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   RotatedBox(
                     quarterTurns: AppLanguage.isRTL() ? 2 : 0,
@@ -320,7 +320,7 @@ class _SettingState extends State<Setting> {
                 children: <Widget>[
                   Text(
                     Application.packageInfo?.version ?? '',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   RotatedBox(
                     quarterTurns: AppLanguage.isRTL() ? 2 : 0,

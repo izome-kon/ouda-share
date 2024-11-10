@@ -176,7 +176,7 @@ class _DetailDailyState extends State<DetailDaily> {
               Translate.of(context).translate('end_time'),
               style: Theme.of(context)
                   .textTheme
-                  .button
+                  .bodySmall
                   ?.copyWith(fontWeight: FontWeight.bold),
             )
           ],
@@ -237,13 +237,13 @@ class _DetailDailyState extends State<DetailDaily> {
                 children: [
                   Text(
                     Translate.of(context).translate('total'),
-                    style: Theme.of(context).textTheme.subtitle1?.copyWith(
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           fontWeight: FontWeight.bold,
                         ),
                   ),
                   Text(
                     widget.bookingStyle.price,
-                    style: Theme.of(context).textTheme.subtitle1?.copyWith(
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           fontWeight: FontWeight.bold,
                         ),
                   )

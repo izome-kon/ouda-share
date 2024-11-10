@@ -81,7 +81,7 @@ class _WebState extends State<Web> {
         index: _loadCompleted ? 1 : 0,
         children: [
           Container(
-            color: Theme.of(context).backgroundColor,
+            color: Theme.of(context).colorScheme.background,
           ),
           WebView(
             initialUrl: widget.web.url,

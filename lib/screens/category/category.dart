@@ -102,7 +102,7 @@ class _CategoryState extends State<Category> {
                   Translate.of(context).translate(
                     'category_not_found',
                   ),
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
               ),
             ],

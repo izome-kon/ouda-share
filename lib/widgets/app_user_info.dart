@@ -64,13 +64,18 @@ class AppUserInfo extends StatelessWidget {
           );
         }
         Widget description = Container();
-        if(user!.description.isNotEmpty){
-          description = Column(crossAxisAlignment: CrossAxisAlignment.start,children: [const SizedBox(height: 4),
-            Text(
-              user!.description,
-              maxLines: 1,
-              style: Theme.of(context).textTheme.caption,
-            ),],);
+        if (user!.description.isNotEmpty) {
+          description = Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(height: 4),
+              Text(
+                user!.description,
+                maxLines: 1,
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+            ],
+          );
         }
         return InkWell(
           onTap: onPressed,
@@ -128,14 +133,14 @@ class AppUserInfo extends StatelessWidget {
                     Text(
                       user!.name,
                       maxLines: 1,
-                      style: Theme.of(context).textTheme.subtitle2,
+                      style: Theme.of(context).textTheme.titleMedium,
                     ),
                     description,
                     const SizedBox(height: 4),
                     Text(
                       user!.nickname,
                       maxLines: 1,
-                      style: Theme.of(context).textTheme.caption,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ],
                 ),
@@ -241,12 +246,12 @@ class AppUserInfo extends StatelessWidget {
                     user!.name,
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle1!
+                        .titleMedium!
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   Text(
                     user!.email,
-                    style: Theme.of(context).textTheme.caption,
+                    style: Theme.of(context).textTheme.bodySmall,
                   )
                 ],
               )

@@ -137,7 +137,7 @@ class _TagsPickerState extends State<TagsPicker> {
               const SizedBox(height: 2),
               Text(
                 Translate.of(context).translate('separate_tag'),
-                style: Theme.of(context).textTheme.caption,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
               AnimatedContainer(
                 height: _suggest.isNotEmpty ? 88 : 0,

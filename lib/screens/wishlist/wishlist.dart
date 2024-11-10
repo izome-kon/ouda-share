@@ -235,7 +235,7 @@ class _WishListState extends State<WishList> {
                     padding: const EdgeInsets.all(4),
                     child: Text(
                       Translate.of(context).translate('list_is_empty'),
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ),
                 ],

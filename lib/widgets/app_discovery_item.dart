@@ -48,13 +48,13 @@ class AppDiscoveryItem extends StatelessWidget {
                       item!.category.title,
                       style: Theme.of(context)
                           .textTheme
-                          .subtitle1!
+                          .titleMedium!
                           .copyWith(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 2),
                     Text(
                       '${item!.category.count} ${Translate.of(context).translate('location')}',
-                      style: Theme.of(context).textTheme.caption,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ],
                 ),
@@ -66,7 +66,7 @@ class AppDiscoveryItem extends StatelessWidget {
                 },
                 child: Text(
                   Translate.of(context).translate('see_more'),
-                  style: Theme.of(context).textTheme.caption!.copyWith(
+                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
                         color: Theme.of(context).colorScheme.secondary,
                       ),
                 ),

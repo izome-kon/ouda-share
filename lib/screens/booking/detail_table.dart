@@ -175,7 +175,7 @@ class _DetailTableState extends State<DetailTable> {
                         const SizedBox(height: 4),
                         Text(
                           Translate.of(context).translate('booked'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         )
                       ],
                     ),
@@ -195,7 +195,7 @@ class _DetailTableState extends State<DetailTable> {
                         const SizedBox(height: 4),
                         Text(
                           Translate.of(context).translate('selected'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         )
                       ],
                     ),
@@ -215,7 +215,7 @@ class _DetailTableState extends State<DetailTable> {
                         const SizedBox(height: 4),
                         Text(
                           Translate.of(context).translate('empty'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         )
                       ],
                     ),
@@ -227,7 +227,7 @@ class _DetailTableState extends State<DetailTable> {
                 Translate.of(context).translate('booking_a_table'),
                 style: Theme.of(context)
                     .textTheme
-                    .subtitle1!
+                    .titleMedium!
                     .copyWith(fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 16),
@@ -262,7 +262,7 @@ class _DetailTableState extends State<DetailTable> {
                       ),
                       child: Text(
                         '${item['id']}',
-                        style: Theme.of(context).textTheme.button!.copyWith(
+                        style: Theme.of(context).textTheme.bodySmall!.copyWith(
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),
@@ -279,13 +279,13 @@ class _DetailTableState extends State<DetailTable> {
                 children: [
                   Text(
                     Translate.of(context).translate('total'),
-                    style: Theme.of(context).textTheme.subtitle1?.copyWith(
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           fontWeight: FontWeight.bold,
                         ),
                   ),
                   Text(
                     widget.bookingStyle.price,
-                    style: Theme.of(context).textTheme.subtitle1?.copyWith(
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           fontWeight: FontWeight.bold,
                         ),
                   )

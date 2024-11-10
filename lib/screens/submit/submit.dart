@@ -755,7 +755,7 @@ class _SubmitState extends State<Submit> {
               Translate.of(context).translate('title'),
               style: Theme.of(context)
                   .textTheme
-                  .subtitle1!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -785,7 +785,7 @@ class _SubmitState extends State<Submit> {
               Translate.of(context).translate('content'),
               style: Theme.of(context)
                   .textTheme
-                  .subtitle1!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -809,7 +809,7 @@ class _SubmitState extends State<Submit> {
               Translate.of(context).translate('category'),
               style: Theme.of(context)
                   .textTheme
-                  .subtitle1!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -823,7 +823,7 @@ class _SubmitState extends State<Submit> {
               Translate.of(context).translate('facilities'),
               style: Theme.of(context)
                   .textTheme
-                  .subtitle1!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -837,7 +837,7 @@ class _SubmitState extends State<Submit> {
               Translate.of(context).translate('tags'),
               style: Theme.of(context)
                   .textTheme
-                  .subtitle1!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -1063,7 +1063,7 @@ class _SubmitState extends State<Submit> {
                         Translate.of(context).translate('color'),
                         style: Theme.of(context)
                             .textTheme
-                            .subtitle1!
+                            .titleMedium!
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 8),
@@ -1094,7 +1094,7 @@ class _SubmitState extends State<Submit> {
                         Translate.of(context).translate('icon'),
                         style: Theme.of(context)
                             .textTheme
-                            .subtitle1!
+                            .titleMedium!
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 8),
@@ -1114,7 +1114,7 @@ class _SubmitState extends State<Submit> {
               Translate.of(context).translate('status'),
               style: Theme.of(context)
                   .textTheme
-                  .subtitle1!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -1145,7 +1145,7 @@ class _SubmitState extends State<Submit> {
               ),
               style: Theme.of(context)
                   .textTheme
-                  .subtitle1!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -1171,7 +1171,7 @@ class _SubmitState extends State<Submit> {
                         Translate.of(context).translate('price_min'),
                         style: Theme.of(context)
                             .textTheme
-                            .subtitle1!
+                            .titleMedium!
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 8),
@@ -1201,7 +1201,7 @@ class _SubmitState extends State<Submit> {
                         },
                         trailing: Text(
                           Application.setting.unit,
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                       ),
                     ],
@@ -1216,7 +1216,7 @@ class _SubmitState extends State<Submit> {
                         Translate.of(context).translate('price_max'),
                         style: Theme.of(context)
                             .textTheme
-                            .subtitle1!
+                            .titleMedium!
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 8),
@@ -1243,7 +1243,7 @@ class _SubmitState extends State<Submit> {
                         },
                         trailing: Text(
                           Application.setting.unit,
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                       ),
                     ],
@@ -1262,7 +1262,7 @@ class _SubmitState extends State<Submit> {
                         Translate.of(context).translate('booking_style'),
                         style: Theme.of(context)
                             .textTheme
-                            .subtitle1!
+                            .titleMedium!
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 8),
@@ -1285,7 +1285,7 @@ class _SubmitState extends State<Submit> {
                         Translate.of(context).translate('price'),
                         style: Theme.of(context)
                             .textTheme
-                            .subtitle1!
+                            .titleMedium!
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 8),
@@ -1308,7 +1308,7 @@ class _SubmitState extends State<Submit> {
                         },
                         trailing: Text(
                           Application.setting.unit,
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                       ),
                     ],
@@ -1324,14 +1324,14 @@ class _SubmitState extends State<Submit> {
                   Translate.of(context).translate('open_time'),
                   style: Theme.of(context)
                       .textTheme
-                      .subtitle1!
+                      .titleMedium!
                       .copyWith(fontWeight: FontWeight.bold),
                 ),
                 TextButton(
                   onPressed: _onOpenTime,
                   child: Text(
                     textActionOpenTime,
-                    style: Theme.of(context).textTheme.button!.copyWith(
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
                           color: Theme.of(context).colorScheme.secondary,
                         ),
                   ),
@@ -1345,14 +1345,14 @@ class _SubmitState extends State<Submit> {
                   Translate.of(context).translate('social_network'),
                   style: Theme.of(context)
                       .textTheme
-                      .subtitle1!
+                      .titleMedium!
                       .copyWith(fontWeight: FontWeight.bold),
                 ),
                 TextButton(
                   onPressed: _onSocialNetwork,
                   child: Text(
                     textActionOpenTime,
-                    style: Theme.of(context).textTheme.button!.copyWith(
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
                           color: Theme.of(context).colorScheme.secondary,
                         ),
                   ),

@@ -75,7 +75,7 @@ class _ResultListState extends State<ResultList> {
                         Translate.of(context).translate(
                           'can_not_found_data',
                         ),
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodySmall,
                       ),
                     ),
                   ],

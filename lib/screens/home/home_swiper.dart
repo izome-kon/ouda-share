@@ -31,7 +31,7 @@ class HomeSwipe extends StatelessWidget {
               return Container(
                 margin: const EdgeInsets.only(bottom: 2),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).backgroundColor,
+                  color: Theme.of(context).colorScheme.background,
                   image: DecorationImage(
                     image: imageProvider,
                     fit: BoxFit.cover,
@@ -62,7 +62,7 @@ class HomeSwipe extends StatelessWidget {
 
     ///Loading
     return Container(
-      color: Theme.of(context).backgroundColor,
+      color: Theme.of(context).colorScheme.background,
       child: AppPlaceholder(
         child: Container(
           margin: const EdgeInsets.only(bottom: 2),

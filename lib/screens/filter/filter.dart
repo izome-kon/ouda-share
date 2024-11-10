@@ -144,15 +144,15 @@ class _FilterState extends State<Filter> {
     String unit = Application.setting.unit;
     Widget country = Text(
       Translate.of(context).translate('choose_country'),
-      style: Theme.of(context).textTheme.caption,
+      style: Theme.of(context).textTheme.bodySmall,
     );
     Widget city = Text(
       Translate.of(context).translate('choose_city'),
-      style: Theme.of(context).textTheme.caption,
+      style: Theme.of(context).textTheme.bodySmall,
     );
     Widget state = Text(
       Translate.of(context).translate('choose_state'),
-      style: Theme.of(context).textTheme.caption,
+      style: Theme.of(context).textTheme.bodySmall,
     );
     Widget cityAction = RotatedBox(
       quarterTurns: AppLanguage.isRTL() ? 2 : 0,
@@ -174,7 +174,7 @@ class _FilterState extends State<Filter> {
         _filter.country!.title,
         style: Theme.of(context)
             .textTheme
-            .caption!
+            .bodySmall!
             .copyWith(color: Theme.of(context).primaryColor),
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
@@ -185,7 +185,7 @@ class _FilterState extends State<Filter> {
         _filter.city!.title,
         style: Theme.of(context)
             .textTheme
-            .caption!
+            .bodySmall!
             .copyWith(color: Theme.of(context).primaryColor),
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
@@ -196,7 +196,7 @@ class _FilterState extends State<Filter> {
         _filter.state!.title,
         style: Theme.of(context)
             .textTheme
-            .caption!
+            .bodySmall!
             .copyWith(color: Theme.of(context).primaryColor),
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
@@ -239,7 +239,7 @@ class _FilterState extends State<Filter> {
               Translate.of(context).translate('category'),
               style: Theme.of(context)
                   .textTheme
-                  .headline6!
+                  .headlineSmall!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -270,7 +270,7 @@ class _FilterState extends State<Filter> {
               Translate.of(context).translate('facilities'),
               style: Theme.of(context)
                   .textTheme
-                  .headline6!
+                  .headlineSmall!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -309,7 +309,7 @@ class _FilterState extends State<Filter> {
                           Translate.of(context).translate('country'),
                           style: Theme.of(context)
                               .textTheme
-                              .headline6!
+                              .headlineSmall!
                               .copyWith(fontWeight: FontWeight.bold),
                         ),
                         country,
@@ -343,7 +343,7 @@ class _FilterState extends State<Filter> {
                                 Translate.of(context).translate('city'),
                                 style: Theme.of(context)
                                     .textTheme
-                                    .headline6!
+                                    .headlineSmall!
                                     .copyWith(
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -376,7 +376,7 @@ class _FilterState extends State<Filter> {
                                 Translate.of(context).translate('state'),
                                 style: Theme.of(context)
                                     .textTheme
-                                    .headline6!
+                                    .headlineSmall!
                                     .copyWith(
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -400,7 +400,7 @@ class _FilterState extends State<Filter> {
                   Translate.of(context).translate('distance'),
                   style: Theme.of(context)
                       .textTheme
-                      .headline6!
+                      .headlineSmall!
                       .copyWith(fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 4),
@@ -410,11 +410,11 @@ class _FilterState extends State<Filter> {
                   children: <Widget>[
                     Text(
                       '0Km',
-                      style: Theme.of(context).textTheme.caption,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                     Text(
                       '30Km',
-                      style: Theme.of(context).textTheme.caption,
+                      style: Theme.of(context).textTheme.bodySmall,
                     )
                   ],
                 ),
@@ -434,7 +434,7 @@ class _FilterState extends State<Filter> {
                   Translate.of(context).translate('price_range'),
                   style: Theme.of(context)
                       .textTheme
-                      .headline6!
+                      .headlineSmall!
                       .copyWith(fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 4),
@@ -444,11 +444,11 @@ class _FilterState extends State<Filter> {
                   children: <Widget>[
                     Text(
                       '${Application.setting.minPrice}',
-                      style: Theme.of(context).textTheme.caption,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                     Text(
                       '${Application.setting.maxPrice}',
-                      style: Theme.of(context).textTheme.caption,
+                      style: Theme.of(context).textTheme.bodySmall,
                     )
                   ],
                 )
@@ -479,11 +479,11 @@ class _FilterState extends State<Filter> {
               children: <Widget>[
                 Text(
                   Translate.of(context).translate('avg_price'),
-                  style: Theme.of(context).textTheme.subtitle2,
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
                 Text(
                   '${widget.filter.minPrice?.toInt() ?? Application.setting.minPrice} $unit- ${widget.filter.maxPrice?.toInt() ?? Application.setting.maxPrice} $unit',
-                  style: Theme.of(context).textTheme.subtitle2,
+                  style: Theme.of(context).textTheme.titleMedium,
                 )
               ],
             ),
@@ -492,7 +492,7 @@ class _FilterState extends State<Filter> {
               Translate.of(context).translate('business_color'),
               style: Theme.of(context)
                   .textTheme
-                  .headline6!
+                  .headlineSmall!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -530,7 +530,7 @@ class _FilterState extends State<Filter> {
               Translate.of(context).translate('open_time'),
               style: Theme.of(context)
                   .textTheme
-                  .headline6!
+                  .headlineSmall!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -558,12 +558,12 @@ class _FilterState extends State<Filter> {
                               Translate.of(context).translate(
                                 'start_time',
                               ),
-                              style: Theme.of(context).textTheme.caption,
+                              style: Theme.of(context).textTheme.bodySmall,
                             ),
                             const SizedBox(height: 4),
                             Text(
                               _labelTime(_filter.startHour!),
-                              style: Theme.of(context).textTheme.subtitle2,
+                              style: Theme.of(context).textTheme.titleMedium,
                             ),
                           ],
                         ),
@@ -585,12 +585,12 @@ class _FilterState extends State<Filter> {
                               Translate.of(context).translate(
                                 'end_time',
                               ),
-                              style: Theme.of(context).textTheme.caption,
+                              style: Theme.of(context).textTheme.bodySmall,
                             ),
                             const SizedBox(height: 4),
                             Text(
                               _labelTime(_filter.endHour!),
-                              style: Theme.of(context).textTheme.subtitle2,
+                              style: Theme.of(context).textTheme.titleMedium,
                             ),
                           ],
                         ),

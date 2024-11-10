@@ -42,7 +42,7 @@ class AppNavBar extends StatelessWidget {
               ),
               Text(
                 sortTitle,
-                style: Theme.of(context).textTheme.subtitle2,
+                style: Theme.of(context).textTheme.titleMedium,
               )
             ],
           ),
@@ -70,7 +70,7 @@ class AppNavBar extends StatelessWidget {
                 padding: const EdgeInsets.only(right: 16, left: 16),
                 child: Text(
                   Translate.of(context).translate('filter'),
-                  style: Theme.of(context).textTheme.subtitle2,
+                  style: Theme.of(context).textTheme.titleMedium,
                 ),
               )
             ],

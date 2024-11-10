@@ -22,7 +22,6 @@ class AppProductItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     switch (type) {
-
       ///Mode View Small
       case ProductViewType.small:
         if (item == null) {
@@ -74,7 +73,7 @@ class AppProductItem extends StatelessWidget {
               const SizedBox(height: 4),
               Text(
                 item!.priceDisplay,
-                style: Theme.of(context).textTheme.bodyText1?.copyWith(
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: Theme.of(context).primaryColor),
               )
@@ -137,7 +136,7 @@ class AppProductItem extends StatelessWidget {
                       maxLines: 1,
                       style: Theme.of(context)
                           .textTheme
-                          .bodyText1!
+                          .bodySmall!
                           .copyWith(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 2),
@@ -145,7 +144,7 @@ class AppProductItem extends StatelessWidget {
                       item?.category?.title ?? '',
                       style: Theme.of(context)
                           .textTheme
-                          .caption!
+                          .bodySmall!
                           .copyWith(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 4),
@@ -324,7 +323,7 @@ class AppProductItem extends StatelessWidget {
                 item?.category?.title ?? '',
                 style: Theme.of(context)
                     .textTheme
-                    .caption!
+                    .bodySmall!
                     .copyWith(fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 4),
@@ -333,7 +332,7 @@ class AppProductItem extends StatelessWidget {
                 maxLines: 1,
                 style: Theme.of(context)
                     .textTheme
-                    .subtitle2!
+                    .titleMedium!
                     .copyWith(fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 8),
@@ -368,7 +367,7 @@ class AppProductItem extends StatelessWidget {
               Text(
                 item!.address,
                 maxLines: 1,
-                style: Theme.of(context).textTheme.caption,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ],
           ),
@@ -528,9 +527,10 @@ class AppProductItem extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           item?.category?.title ?? '',
-                          style: Theme.of(context).textTheme.caption!.copyWith(
-                                fontWeight: FontWeight.bold,
-                              ),
+                          style:
+                              Theme.of(context).textTheme.bodySmall!.copyWith(
+                                    fontWeight: FontWeight.bold,
+                                  ),
                         ),
                         const SizedBox(height: 4),
                         Text(
@@ -538,7 +538,7 @@ class AppProductItem extends StatelessWidget {
                           maxLines: 1,
                           style: Theme.of(context)
                               .textTheme
-                              .subtitle2!
+                              .titleMedium!
                               .copyWith(fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 8),
@@ -579,7 +579,7 @@ class AppProductItem extends StatelessWidget {
                               child: Text(
                                 item!.address,
                                 maxLines: 1,
-                                style: Theme.of(context).textTheme.caption,
+                                style: Theme.of(context).textTheme.bodySmall,
                               ),
                             )
                           ],
@@ -596,7 +596,7 @@ class AppProductItem extends StatelessWidget {
                             Expanded(
                               child: Text(item!.phone,
                                   maxLines: 1,
-                                  style: Theme.of(context).textTheme.caption),
+                                  style: Theme.of(context).textTheme.bodySmall),
                             )
                           ],
                         ),
@@ -749,7 +749,7 @@ class AppProductItem extends StatelessWidget {
                                               ),
                                               style: Theme.of(context)
                                                   .textTheme
-                                                  .caption!
+                                                  .bodySmall!
                                                   .copyWith(
                                                     color: Colors.white,
                                                     fontWeight: FontWeight.bold,
@@ -781,7 +781,7 @@ class AppProductItem extends StatelessWidget {
                                     "${item!.numRate} ${Translate.of(context).translate('feedback')}",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .caption!
+                                        .bodySmall!
                                         .copyWith(
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold,
@@ -831,7 +831,7 @@ class AppProductItem extends StatelessWidget {
                                 item?.category?.title ?? '',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .caption!
+                                    .bodySmall!
                                     .copyWith(fontWeight: FontWeight.bold),
                               ),
                               const SizedBox(height: 4),
@@ -840,7 +840,7 @@ class AppProductItem extends StatelessWidget {
                                 maxLines: 1,
                                 style: Theme.of(context)
                                     .textTheme
-                                    .subtitle2!
+                                    .titleMedium!
                                     .copyWith(fontWeight: FontWeight.bold),
                               ),
                             ],
@@ -862,7 +862,7 @@ class AppProductItem extends StatelessWidget {
                           child: Text(
                             item!.address,
                             maxLines: 1,
-                            style: Theme.of(context).textTheme.caption,
+                            style: Theme.of(context).textTheme.bodySmall,
                           ),
                         )
                       ],
@@ -880,7 +880,7 @@ class AppProductItem extends StatelessWidget {
                           child: Text(
                             item!.phone,
                             maxLines: 1,
-                            style: Theme.of(context).textTheme.caption,
+                            style: Theme.of(context).textTheme.bodySmall,
                           ),
                         )
                       ],
@@ -982,7 +982,7 @@ class AppProductItem extends StatelessWidget {
                   padding: const EdgeInsets.all(4),
                   child: Text(
                     item!.title,
-                    style: Theme.of(context).textTheme.caption,
+                    style: Theme.of(context).textTheme.bodySmall,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),

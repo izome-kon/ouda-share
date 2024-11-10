@@ -105,7 +105,7 @@ class _DiscoveryState extends State<Discovery> {
                           Translate.of(context).translate(
                             'can_not_found_data',
                           ),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                       ),
                     );

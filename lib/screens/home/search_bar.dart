@@ -33,7 +33,7 @@ class MySearchBar extends StatelessWidget {
                       Translate.of(context).translate(
                         'search_location',
                       ),
-                      style: Theme.of(context).textTheme.button,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ),
                   const VerticalDivider(),

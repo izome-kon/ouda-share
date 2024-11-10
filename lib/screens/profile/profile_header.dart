@@ -89,7 +89,7 @@ class ProfileHeader extends SliverPersistentHeaderDelegate {
               maxLines: 1,
               style: Theme.of(context)
                   .textTheme
-                  .caption!
+                  .bodySmall!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
           ],
@@ -176,7 +176,7 @@ class ProfileHeader extends SliverPersistentHeaderDelegate {
                   maxLines: 1,
                   style: Theme.of(context)
                       .textTheme
-                      .subtitle1!
+                      .titleMedium!
                       .copyWith(fontWeight: FontWeight.bold),
                 ),
                 description,
@@ -205,7 +205,10 @@ class ProfileHeader extends SliverPersistentHeaderDelegate {
                         Text(
                           '$post$review',
                           maxLines: 1,
-                          style: Theme.of(context).textTheme.caption!.copyWith(
+                          style: Theme.of(context)
+                              .textTheme
+                              .bodySmall!
+                              .copyWith(
                                 color: Theme.of(context).colorScheme.secondary,
                               ),
                         ),
@@ -222,7 +225,7 @@ class ProfileHeader extends SliverPersistentHeaderDelegate {
     }
     return Container(
       height: height,
-      color: Theme.of(context).backgroundColor,
+      color: Theme.of(context).colorScheme.background,
       child: SafeArea(
         top: false,
         bottom: false,

@@ -43,7 +43,7 @@ class AppTag extends StatelessWidget {
             ),
             child: Text(
               text,
-              style: Theme.of(context).textTheme.caption!.copyWith(
+              style: Theme.of(context).textTheme.bodySmall!.copyWith(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
@@ -67,7 +67,7 @@ class AppTag extends StatelessWidget {
               text,
               style: Theme.of(context)
                   .textTheme
-                  .caption!
+                  .bodySmall!
                   .copyWith(color: Colors.white),
             ),
           ),
@@ -92,7 +92,7 @@ class AppTag extends StatelessWidget {
                 iconWidget,
                 Text(
                   text,
-                  style: Theme.of(context).textTheme.caption!.copyWith(
+                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
                         color: Theme.of(context).colorScheme.secondary,
                       ),
                 )

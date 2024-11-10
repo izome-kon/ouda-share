@@ -143,7 +143,7 @@ class _WriteReviewState extends State<WriteReview> {
                     ),
                     Text(
                       Translate.of(context).translate('tap_rate'),
-                      style: Theme.of(context).textTheme.caption,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 16),
@@ -156,7 +156,7 @@ class _WriteReviewState extends State<WriteReview> {
                               Translate.of(context).translate('description'),
                               style: Theme.of(context)
                                   .textTheme
-                                  .subtitle2!
+                                  .titleMedium!
                                   .copyWith(fontWeight: FontWeight.bold),
                             ),
                           ),

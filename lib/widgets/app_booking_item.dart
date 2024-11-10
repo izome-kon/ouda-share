@@ -38,13 +38,13 @@ class AppBookingItem extends StatelessWidget {
                       item?.title ?? '',
                       style: Theme.of(context)
                           .textTheme
-                          .bodyText1!
+                          .bodySmall!
                           .copyWith(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 4),
                     Text(
                       item?.createdBy ?? '',
-                      style: Theme.of(context).textTheme.caption,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ],
                 ),
@@ -54,14 +54,14 @@ class AppBookingItem extends StatelessWidget {
                 children: [
                   Text(
                     item?.date?.dateView ?? '',
-                    style: Theme.of(context).textTheme.caption,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   const SizedBox(height: 4),
                   Text(
                     item?.status ?? '',
                     style: Theme.of(context)
                         .textTheme
-                        .button!
+                        .bodySmall!
                         .copyWith(color: item?.statusColor),
                   ),
                 ],

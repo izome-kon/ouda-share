@@ -54,7 +54,7 @@ class _PickerState extends State<Picker> {
                 Translate.of(context).translate(
                   'can_not_found_data',
                 ),
-                style: Theme.of(context).textTheme.bodyText1,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ),
           ],

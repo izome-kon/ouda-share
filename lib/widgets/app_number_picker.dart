@@ -79,10 +79,12 @@ class _AppNumberPickerState extends State<AppNumberPicker> {
                         const SizedBox(width: 16),
                         Text(
                           '$_value',
-                          style:
-                              Theme.of(context).textTheme.headline5?.copyWith(
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineSmall
+                              ?.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
                         ),
                         const SizedBox(width: 16),
                         InkWell(

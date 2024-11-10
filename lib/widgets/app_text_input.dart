@@ -57,8 +57,8 @@ class _AppTextInputState extends State<AppTextInput> {
                 Translate.of(context).translate(widget.errorText!),
                 style: Theme.of(context)
                     .textTheme
-                    .caption!
-                    .copyWith(color: Theme.of(context).errorColor),
+                    .bodySmall!
+                    .copyWith(color: Theme.of(context).colorScheme.error),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
               ),
@@ -78,8 +78,8 @@ class _AppTextInputState extends State<AppTextInput> {
               Translate.of(context).translate(widget.errorText!),
               style: Theme.of(context)
                   .textTheme
-                  .caption!
-                  .copyWith(color: Theme.of(context).errorColor),
+                  .bodySmall!
+                  .copyWith(color: Theme.of(context).colorScheme.error),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
             ),

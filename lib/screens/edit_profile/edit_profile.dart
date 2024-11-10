@@ -120,7 +120,7 @@ class _EditProfileState extends State<EditProfile> {
                     Translate.of(context).translate('name'),
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle2!
+                        .titleMedium!
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 8),
@@ -150,7 +150,7 @@ class _EditProfileState extends State<EditProfile> {
                     Translate.of(context).translate('email'),
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle2!
+                        .titleMedium!
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 8),
@@ -182,7 +182,7 @@ class _EditProfileState extends State<EditProfile> {
                     Translate.of(context).translate('website'),
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle2!
+                        .titleMedium!
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 8),
@@ -214,7 +214,7 @@ class _EditProfileState extends State<EditProfile> {
                     Translate.of(context).translate('information'),
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle2!
+                        .titleMedium!
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 8),

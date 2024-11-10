@@ -432,7 +432,7 @@ class _BookingState extends State<Booking> {
                 item.bankName,
                 style: Theme.of(context)
                     .textTheme
-                    .subtitle1!
+                    .titleMedium!
                     .copyWith(fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 8),
@@ -444,22 +444,22 @@ class _BookingState extends State<Booking> {
                       children: [
                         Text(
                           Translate.of(context).translate('account_name'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         const SizedBox(height: 2),
                         Text(
                           item.name,
-                          style: Theme.of(context).textTheme.button,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         const SizedBox(height: 8),
                         Text(
                           Translate.of(context).translate('iban'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         const SizedBox(height: 2),
                         Text(
                           item.bankIban,
-                          style: Theme.of(context).textTheme.button,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                       ],
                     ),
@@ -471,22 +471,22 @@ class _BookingState extends State<Booking> {
                       children: [
                         Text(
                           Translate.of(context).translate('account_number'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         const SizedBox(height: 2),
                         Text(
                           item.number,
-                          style: Theme.of(context).textTheme.button,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         const SizedBox(height: 8),
                         Text(
                           Translate.of(context).translate('swift_code'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         const SizedBox(height: 2),
                         Text(
                           item.bankSwift,
-                          style: Theme.of(context).textTheme.button,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                       ],
                     ),
@@ -516,18 +516,18 @@ class _BookingState extends State<Booking> {
                     form.bookingPayment.method?.title ?? '',
                     style: Theme.of(context)
                         .textTheme
-                        .headline6!
+                        .headlineSmall!
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 4),
                   Text(
                     form.bookingPayment.method?.description ?? '',
-                    style: Theme.of(context).textTheme.caption,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   const SizedBox(height: 8),
                   Text(
                     form.bookingPayment.method?.instruction ?? '',
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                 ],
               ),
@@ -563,13 +563,13 @@ class _BookingState extends State<Booking> {
                             children: [
                               Text(
                                 item.title!,
-                                style: Theme.of(context).textTheme.button,
+                                style: Theme.of(context).textTheme.bodySmall,
                               ),
                               Text(
                                 item.instruction!,
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
-                                style: Theme.of(context).textTheme.caption,
+                                style: Theme.of(context).textTheme.bodySmall,
                               ),
                             ],
                           ),
@@ -598,13 +598,13 @@ class _BookingState extends State<Booking> {
                       children: [
                         Text(
                           item.title!,
-                          style: Theme.of(context).textTheme.button,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         Text(
                           item.instruction!,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                       ],
                     ),
@@ -647,7 +647,7 @@ class _BookingState extends State<Booking> {
             Translate.of(context).translate('booking_success_title'),
             style: Theme.of(context)
                 .textTheme
-                .headline6!
+                .headlineSmall!
                 .copyWith(fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8),
@@ -656,7 +656,7 @@ class _BookingState extends State<Booking> {
               'booking_success_message',
             ),
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodyMedium,
           )
         ],
       ),
@@ -752,7 +752,7 @@ class _BookingState extends State<Booking> {
                   ),
                   Text(
                     Translate.of(context).translate('i_agree'),
-                    style: Theme.of(context).textTheme.button,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   const SizedBox(width: 2),
                   InkWell(
@@ -761,7 +761,7 @@ class _BookingState extends State<Booking> {
                     },
                     child: Text(
                       Translate.of(context).translate('term_condition'),
-                      style: Theme.of(context).textTheme.button!.copyWith(
+                      style: Theme.of(context).textTheme.bodySmall!.copyWith(
                             color: Theme.of(context).colorScheme.secondary,
                           ),
                     ),

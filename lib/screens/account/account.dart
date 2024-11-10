@@ -109,7 +109,7 @@ class _AccountState extends State<Account> {
             builder: (context, setState) {
               return Text(
                 Translate.of(context).translate('would_you_like_deactivate'),
-                style: Theme.of(context).textTheme.bodyText2,
+                style: Theme.of(context).textTheme.bodyMedium,
               );
             },
           ),

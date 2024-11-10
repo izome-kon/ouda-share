@@ -212,7 +212,8 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
                                     Translate.of(context).translate(
                                       'share_qr_profile',
                                     ),
-                                    style: Theme.of(context).textTheme.caption,
+                                    style:
+                                        Theme.of(context).textTheme.bodySmall,
                                   )
                                 ],
                               )
@@ -516,7 +517,7 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
                   padding: const EdgeInsets.all(3.0),
                   child: Text(
                     Translate.of(context).translate('list_is_empty'),
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                 ),
               ],
@@ -575,7 +576,7 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
                   padding: const EdgeInsets.all(3.0),
                   child: Text(
                     Translate.of(context).translate('list_is_empty'),
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                 ),
               ],
@@ -634,7 +635,7 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
                   padding: const EdgeInsets.all(3.0),
                   child: Text(
                     Translate.of(context).translate('list_is_empty'),
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                 ),
               ],

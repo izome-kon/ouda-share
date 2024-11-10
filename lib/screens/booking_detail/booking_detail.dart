@@ -47,7 +47,7 @@ class _BookingDetailState extends State<BookingDetail> {
         children: [
           Text(
             item.name,
-            style: Theme.of(context).textTheme.subtitle1,
+            style: Theme.of(context).textTheme.titleMedium,
           ),
           const SizedBox(height: 12),
           Row(
@@ -55,11 +55,11 @@ class _BookingDetailState extends State<BookingDetail> {
             children: [
               Text(
                 Translate.of(context).translate('res_length'),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
               Text(
                 'x ${item.quantity}',
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
             ],
           ),
@@ -69,11 +69,11 @@ class _BookingDetailState extends State<BookingDetail> {
             children: [
               Text(
                 Translate.of(context).translate('price'),
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
               Text(
                 '${item.total}${booking.currency}',
-                style: Theme.of(context).textTheme.subtitle1,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
             ],
           ),
@@ -93,12 +93,12 @@ class _BookingDetailState extends State<BookingDetail> {
       children: [
         Text(
           title,
-          style: Theme.of(context).textTheme.caption,
+          style: Theme.of(context).textTheme.bodySmall,
         ),
         const SizedBox(height: 4),
         Text(
           value ?? '',
-          style: Theme.of(context).textTheme.subtitle1?.copyWith(
+          style: Theme.of(context).textTheme.titleMedium?.copyWith(
                 color: color,
               ),
         ),
@@ -185,13 +185,13 @@ class _BookingDetailState extends State<BookingDetail> {
                               Translate.of(context).translate('booking_id'),
                               style: Theme.of(context)
                                   .textTheme
-                                  .subtitle1!
+                                  .titleMedium!
                                   .copyWith(fontWeight: FontWeight.bold),
                             ),
                             const SizedBox(width: 8),
                             Text(
                               id,
-                              style: Theme.of(context).textTheme.subtitle1,
+                              style: Theme.of(context).textTheme.titleMedium,
                             )
                           ],
                         ),
@@ -317,7 +317,7 @@ class _BookingDetailState extends State<BookingDetail> {
                               .toUpperCase(),
                           style: Theme.of(context)
                               .textTheme
-                              .subtitle1!
+                              .titleMedium!
                               .copyWith(fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 12),
@@ -331,13 +331,14 @@ class _BookingDetailState extends State<BookingDetail> {
                                     Translate.of(context).translate(
                                       'first_name',
                                     ),
-                                    style: Theme.of(context).textTheme.caption,
+                                    style:
+                                        Theme.of(context).textTheme.bodySmall,
                                   ),
                                   const SizedBox(height: 4),
                                   Text(
                                     state.item.billFirstName ?? '',
                                     style:
-                                        Theme.of(context).textTheme.subtitle1,
+                                        Theme.of(context).textTheme.titleMedium,
                                   ),
                                 ],
                               ),
@@ -350,13 +351,14 @@ class _BookingDetailState extends State<BookingDetail> {
                                     Translate.of(context).translate(
                                       'last_name',
                                     ),
-                                    style: Theme.of(context).textTheme.caption,
+                                    style:
+                                        Theme.of(context).textTheme.bodySmall,
                                   ),
                                   const SizedBox(height: 4),
                                   Text(
                                     state.item.billLastName ?? '',
                                     style:
-                                        Theme.of(context).textTheme.subtitle1,
+                                        Theme.of(context).textTheme.titleMedium,
                                   ),
                                 ],
                               ),
@@ -372,13 +374,14 @@ class _BookingDetailState extends State<BookingDetail> {
                                 children: [
                                   Text(
                                     Translate.of(context).translate('phone'),
-                                    style: Theme.of(context).textTheme.caption,
+                                    style:
+                                        Theme.of(context).textTheme.bodySmall,
                                   ),
                                   const SizedBox(height: 4),
                                   Text(
                                     state.item.billPhone ?? '',
                                     style:
-                                        Theme.of(context).textTheme.subtitle1,
+                                        Theme.of(context).textTheme.titleMedium,
                                   ),
                                 ],
                               ),
@@ -389,13 +392,14 @@ class _BookingDetailState extends State<BookingDetail> {
                                 children: [
                                   Text(
                                     Translate.of(context).translate('email'),
-                                    style: Theme.of(context).textTheme.caption,
+                                    style:
+                                        Theme.of(context).textTheme.bodySmall,
                                   ),
                                   const SizedBox(height: 4),
                                   Text(
                                     state.item.billEmail ?? '',
                                     style:
-                                        Theme.of(context).textTheme.subtitle1,
+                                        Theme.of(context).textTheme.titleMedium,
                                   ),
                                 ],
                               ),
@@ -408,12 +412,12 @@ class _BookingDetailState extends State<BookingDetail> {
                           children: [
                             Text(
                               Translate.of(context).translate('address'),
-                              style: Theme.of(context).textTheme.caption,
+                              style: Theme.of(context).textTheme.bodySmall,
                             ),
                             const SizedBox(height: 4),
                             Text(
                               state.item.billAddress ?? '',
-                              style: Theme.of(context).textTheme.subtitle1,
+                              style: Theme.of(context).textTheme.titleMedium,
                             ),
                           ],
                         ),

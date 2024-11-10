@@ -384,7 +384,7 @@ class _ListProductState extends State<ListProduct> {
                       padding: const EdgeInsets.all(4.0),
                       child: Text(
                         Translate.of(context).translate('list_is_empty'),
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodySmall,
                       ),
                     ),
                   ],
@@ -483,7 +483,7 @@ class _ListProductState extends State<ListProduct> {
                             child: Container(
                               padding: const EdgeInsets.all(8),
                               decoration: BoxDecoration(
-                                color: Theme.of(context).backgroundColor,
+                                color: Theme.of(context).colorScheme.background,
                                 borderRadius: const BorderRadius.all(
                                   Radius.circular(8),
                                 ),

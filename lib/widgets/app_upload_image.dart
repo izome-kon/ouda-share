@@ -114,7 +114,7 @@ class _AppUploadImageState extends State<AppUploadImage> {
               padding: const EdgeInsets.all(16),
               child: Text(
                 widget.title!,
-                style: Theme.of(context).textTheme.caption,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             );
           }

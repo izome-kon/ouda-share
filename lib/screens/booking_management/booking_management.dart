@@ -241,7 +241,7 @@ class _BookingManagementState extends State<BookingManagement>
                         Translate.of(context).translate(
                           'data_not_found',
                         ),
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodySmall,
                       ),
                     ),
                   ],
@@ -297,7 +297,7 @@ class _BookingManagementState extends State<BookingManagement>
                       ),
                     ],
                     onTap: _onTap,
-                    labelColor: Theme.of(context).textTheme.button?.color,
+                    labelColor: Theme.of(context).textTheme.bodySmall?.color,
                   ),
                   const SizedBox(height: 16),
                   AppTextInput(
@@ -333,7 +333,7 @@ class _BookingManagementState extends State<BookingManagement>
                               const SizedBox(width: 4),
                               Text(
                                 Translate.of(context).translate('filter'),
-                                style: Theme.of(context).textTheme.caption,
+                                style: Theme.of(context).textTheme.bodySmall,
                               )
                             ],
                           ),
@@ -364,7 +364,7 @@ class _BookingManagementState extends State<BookingManagement>
                               const SizedBox(width: 4),
                               Text(
                                 Translate.of(context).translate('sort'),
-                                style: Theme.of(context).textTheme.caption,
+                                style: Theme.of(context).textTheme.bodySmall,
                               )
                             ],
                           ),

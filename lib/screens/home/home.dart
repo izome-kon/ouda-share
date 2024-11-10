@@ -206,14 +206,14 @@ class _HomeState extends State<Home> {
                 ),
                 style: Theme.of(context)
                     .textTheme
-                    .headline6!
+                    .headlineSmall!
                     .copyWith(fontWeight: FontWeight.bold),
               ),
               Text(
                 Translate.of(context).translate(
                   'let_find_interesting',
                 ),
-                style: Theme.of(context).textTheme.bodyText1,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ],
           ),
@@ -277,14 +277,14 @@ class _HomeState extends State<Home> {
                 Translate.of(context).translate('recent_location'),
                 style: Theme.of(context)
                     .textTheme
-                    .headline6!
+                    .headlineSmall!
                     .copyWith(fontWeight: FontWeight.bold),
               ),
               Text(
                 Translate.of(context).translate(
                   'what_happen',
                 ),
-                style: Theme.of(context).textTheme.bodyText1,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ],
           ),

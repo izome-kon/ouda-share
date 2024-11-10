@@ -163,7 +163,7 @@ class _AppContainerState extends State<AppContainer> {
           const SizedBox(height: 2),
           Text(
             Translate.of(context).translate(title),
-            style: Theme.of(context).textTheme.button!.copyWith(
+            style: Theme.of(context).textTheme.bodySmall!.copyWith(
                   fontSize: 10,
                   color: color,
                 ),

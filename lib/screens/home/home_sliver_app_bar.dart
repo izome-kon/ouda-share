@@ -26,7 +26,7 @@ class AppBarHomeSliver extends SliverPersistentHeaderDelegate {
         ),
         Container(
           height: 32,
-          color: Theme.of(context).backgroundColor,
+          color: Theme.of(context).colorScheme.background,
         ),
         MySearchBar(
           onSearch: onSearch,

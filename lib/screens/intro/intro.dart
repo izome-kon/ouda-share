@@ -41,7 +41,7 @@ class _IntroState extends State<Intro> {
         ),
         body: Text(
           "Favorite brands and hottest trends.",
-          style: Theme.of(context).textTheme.headline6!.copyWith(
+          style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                 color: Colors.white,
               ),
         ),
@@ -49,7 +49,7 @@ class _IntroState extends State<Intro> {
           Translate.of(context).translate('shopping'),
           style: Theme.of(context)
               .textTheme
-              .headline5!
+              .headlineSmall!
               .copyWith(color: Colors.white),
         ),
         mainImage: Image.asset(
@@ -67,14 +67,14 @@ class _IntroState extends State<Intro> {
           Translate.of(context).translate('shopping_intro'),
           style: Theme.of(context)
               .textTheme
-              .headline6!
+              .headlineSmall!
               .copyWith(color: Colors.white),
         ),
         title: Text(
           Translate.of(context).translate('payment'),
           style: Theme.of(context)
               .textTheme
-              .headline5!
+              .headlineSmall!
               .copyWith(color: Colors.white),
         ),
         mainImage: Image.asset(
@@ -92,14 +92,14 @@ class _IntroState extends State<Intro> {
           Translate.of(context).translate('payment_intro'),
           style: Theme.of(context)
               .textTheme
-              .headline6!
+              .headlineSmall!
               .copyWith(color: Colors.white),
         ),
         title: Text(
           Translate.of(context).translate('location'),
           style: Theme.of(context)
               .textTheme
-              .headline5!
+              .headlineSmall!
               .copyWith(color: Colors.white),
         ),
         mainImage: Image.asset(
@@ -119,7 +119,7 @@ class _IntroState extends State<Intro> {
         nextText: Text(Translate.of(context).translate('next')),
         skipText: Text(Translate.of(context).translate('skip')),
         backText: Text(Translate.of(context).translate('back')),
-        pageButtonTextStyles: Theme.of(context).textTheme.button!.copyWith(
+        pageButtonTextStyles: Theme.of(context).textTheme.bodySmall!.copyWith(
               color: Colors.white,
             ),
       ),

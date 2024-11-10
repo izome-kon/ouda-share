@@ -65,7 +65,7 @@ class _SubmitSuccessState extends State<SubmitSuccess> {
                         Translate.of(context).translate('completed'),
                         style: Theme.of(context)
                             .textTheme
-                            .headline6!
+                            .headlineSmall!
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
                       const SizedBox(height: 8),
@@ -74,7 +74,7 @@ class _SubmitSuccessState extends State<SubmitSuccess> {
                           'submit_success_message',
                         ),
                         textAlign: TextAlign.center,
-                        style: Theme.of(context).textTheme.bodyText2,
+                        style: Theme.of(context).textTheme.bodyMedium,
                       )
                     ],
                   ),

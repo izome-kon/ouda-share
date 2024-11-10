@@ -159,7 +159,7 @@ class _ThemeSettingState extends State<ThemeSetting> {
                     Translate.of(context).translate('primary_color'),
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle1!
+                        .titleMedium!
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 8),
@@ -187,7 +187,7 @@ class _ThemeSettingState extends State<ThemeSetting> {
                     Translate.of(context).translate('secondary_color'),
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle1!
+                        .titleMedium!
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 8),

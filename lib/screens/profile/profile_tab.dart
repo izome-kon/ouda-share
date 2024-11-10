@@ -51,7 +51,7 @@ class ProfileTab extends SliverPersistentHeaderDelegate {
                   const SizedBox(width: 4),
                   Text(
                     Translate.of(context).translate('filter'),
-                    style: Theme.of(context).textTheme.caption,
+                    style: Theme.of(context).textTheme.bodySmall,
                   )
                 ],
               ),
@@ -79,7 +79,7 @@ class ProfileTab extends SliverPersistentHeaderDelegate {
                   const SizedBox(width: 4),
                   Text(
                     Translate.of(context).translate('sort'),
-                    style: Theme.of(context).textTheme.caption,
+                    style: Theme.of(context).textTheme.bodySmall,
                   )
                 ],
               ),
@@ -112,7 +112,7 @@ class ProfileTab extends SliverPersistentHeaderDelegate {
                 const SizedBox(width: 4),
                 Text(
                   Translate.of(context).translate('sort'),
-                  style: Theme.of(context).textTheme.caption,
+                  style: Theme.of(context).textTheme.bodySmall,
                 )
               ],
             ),
@@ -126,7 +126,7 @@ class ProfileTab extends SliverPersistentHeaderDelegate {
   Widget build(context, shrinkOffset, overlapsContent) {
     return Container(
       height: height,
-      color: Theme.of(context).backgroundColor,
+      color: Theme.of(context).colorScheme.background,
       child: SafeArea(
         top: false,
         bottom: false,
@@ -140,7 +140,7 @@ class ProfileTab extends SliverPersistentHeaderDelegate {
                 controller: tabController,
                 tabs: tabs,
                 onTap: onTap,
-                labelColor: Theme.of(context).textTheme.button?.color,
+                labelColor: Theme.of(context).textTheme.bodySmall?.color,
               ),
               const SizedBox(height: 16),
               AppTextInput(

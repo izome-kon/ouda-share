@@ -84,7 +84,7 @@ class AppCategory extends StatelessWidget {
                                     item!.title,
                                     style: Theme.of(context)
                                         .textTheme
-                                        .subtitle1!
+                                        .titleMedium!
                                         .copyWith(
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold),
@@ -93,7 +93,7 @@ class AppCategory extends StatelessWidget {
                                     '${item!.count} ${Translate.of(context).translate('location')}',
                                     style: Theme.of(context)
                                         .textTheme
-                                        .caption!
+                                        .bodySmall!
                                         .copyWith(color: Colors.white),
                                   ),
                                 ],
@@ -208,13 +208,13 @@ class AppCategory extends StatelessWidget {
                       item!.title,
                       style: Theme.of(context)
                           .textTheme
-                          .subtitle1!
+                          .titleMedium!
                           .copyWith(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 2),
                     Text(
                       '${item!.count} ${Translate.of(context).translate('location')}',
-                      style: Theme.of(context).textTheme.caption,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ],
                 ),
@@ -271,11 +271,13 @@ class AppCategory extends StatelessWidget {
                           padding: const EdgeInsets.all(8),
                           child: Text(
                             item!.title,
-                            style:
-                                Theme.of(context).textTheme.subtitle2!.copyWith(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleMedium!
+                                .copyWith(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
                           ),
                         )
                       ],

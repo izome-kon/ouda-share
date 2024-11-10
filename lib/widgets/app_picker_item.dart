@@ -27,7 +27,7 @@ class AppPickerItem extends StatelessWidget {
         overflow: TextOverflow.ellipsis,
         style: Theme.of(context)
             .textTheme
-            .subtitle1!
+            .titleMedium!
             .copyWith(color: Theme.of(context).hintColor),
       ),
     );
@@ -37,13 +37,13 @@ class AppPickerItem extends StatelessWidget {
         title,
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
-        style: Theme.of(context).textTheme.caption,
+        style: Theme.of(context).textTheme.bodySmall,
       );
       valueWidget = Text(
         value!,
         maxLines: 1,
         overflow: TextOverflow.ellipsis,
-        style: Theme.of(context).textTheme.subtitle1,
+        style: Theme.of(context).textTheme.titleMedium,
       );
     }
 

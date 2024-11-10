@@ -36,7 +36,7 @@ class AppListTitle extends StatelessWidget {
           subtitle!,
           style: Theme.of(context)
               .textTheme
-              .bodyText2!
+              .bodyMedium!
               .copyWith(color: Theme.of(context).primaryColor),
         ),
       );
@@ -74,7 +74,7 @@ class AppListTitle extends StatelessWidget {
                               title,
                               style: Theme.of(context)
                                   .textTheme
-                                  .subtitle1!
+                                  .titleMedium!
                                   .copyWith(fontWeight: FontWeight.bold),
                             ),
                             subTitle

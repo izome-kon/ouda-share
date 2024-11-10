@@ -107,7 +107,7 @@ class _ReviewState extends State<Review> {
                         padding: const EdgeInsets.all(4),
                         child: Text(
                           Translate.of(context).translate('review_not_found'),
-                          style: Theme.of(context).textTheme.bodyText1,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                       ),
                     ],

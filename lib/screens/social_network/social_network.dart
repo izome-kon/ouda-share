@@ -135,7 +135,7 @@ class _SocialNetworkState extends State<SocialNetwork> {
               'Facebook',
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
@@ -158,7 +158,7 @@ class _SocialNetworkState extends State<SocialNetwork> {
               'Twitter',
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
@@ -181,7 +181,7 @@ class _SocialNetworkState extends State<SocialNetwork> {
               'Instagram',
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
@@ -204,7 +204,7 @@ class _SocialNetworkState extends State<SocialNetwork> {
               'Google',
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
@@ -227,7 +227,7 @@ class _SocialNetworkState extends State<SocialNetwork> {
               'Linkedin',
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
@@ -250,7 +250,7 @@ class _SocialNetworkState extends State<SocialNetwork> {
               'Youtube',
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
@@ -273,7 +273,7 @@ class _SocialNetworkState extends State<SocialNetwork> {
               'Tumblr',
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
@@ -296,7 +296,7 @@ class _SocialNetworkState extends State<SocialNetwork> {
               'Flickr',
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
@@ -319,7 +319,7 @@ class _SocialNetworkState extends State<SocialNetwork> {
               'Pinterest',
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),

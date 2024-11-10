@@ -123,7 +123,7 @@ class _SearchHistoryState extends State<SearchHistory> {
                       Translate.of(context).translate('search_history'),
                       style: Theme.of(context)
                           .textTheme
-                          .subtitle1!
+                          .titleMedium!
                           .copyWith(fontWeight: FontWeight.bold),
                     ),
                     InkWell(
@@ -132,7 +132,10 @@ class _SearchHistoryState extends State<SearchHistory> {
                       },
                       child: Text(
                         Translate.of(context).translate('clear'),
-                        style: Theme.of(context).textTheme.subtitle2!.copyWith(
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleMedium!
+                            .copyWith(
                               color: Theme.of(context).colorScheme.secondary,
                             ),
                       ),

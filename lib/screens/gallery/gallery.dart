@@ -174,14 +174,14 @@ class _GalleryState extends State<Gallery> {
                     widget.product.title,
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle2!
+                        .titleMedium!
                         .copyWith(color: Colors.white),
                   ),
                   Text(
                     "${_index + 1}/${widget.product.galleries.length}",
                     style: Theme.of(context)
                         .textTheme
-                        .subtitle2!
+                        .titleMedium!
                         .copyWith(color: Colors.white),
                   )
                 ],

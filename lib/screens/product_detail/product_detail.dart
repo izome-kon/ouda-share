@@ -106,7 +106,7 @@ class _ProductDetailState extends State<ProductDetail> {
               children: <Widget>[
                 Text(
                   message,
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
               ],
             ),
@@ -225,7 +225,7 @@ class _ProductDetailState extends State<ProductDetail> {
                                   Translate.of(context).translate(
                                     'share_qr_listing',
                                   ),
-                                  style: Theme.of(context).textTheme.caption,
+                                  style: Theme.of(context).textTheme.bodySmall,
                                 )
                               ],
                             )
@@ -818,7 +818,7 @@ class _ProductDetailState extends State<ProductDetail> {
                 Translate.of(context).translate('latest'),
                 style: Theme.of(context)
                     .textTheme
-                    .headline6!
+                    .headlineSmall!
                     .copyWith(fontWeight: FontWeight.bold),
               ),
             ),
@@ -860,7 +860,7 @@ class _ProductDetailState extends State<ProductDetail> {
                 Translate.of(context).translate('related'),
                 style: Theme.of(context)
                     .textTheme
-                    .headline6!
+                    .headlineSmall!
                     .copyWith(fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 8),
@@ -988,7 +988,7 @@ class _ProductDetailState extends State<ProductDetail> {
                             children: <Widget>[
                               Text(
                                 Translate.of(context).translate('address'),
-                                style: Theme.of(context).textTheme.caption,
+                                style: Theme.of(context).textTheme.bodySmall,
                               ),
                               Text(
                                 product.address,
@@ -996,7 +996,7 @@ class _ProductDetailState extends State<ProductDetail> {
                                 overflow: TextOverflow.ellipsis,
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText1!
+                                    .bodySmall!
                                     .copyWith(fontWeight: FontWeight.bold),
                               ),
                             ],
@@ -1027,7 +1027,7 @@ class _ProductDetailState extends State<ProductDetail> {
                 padding: const EdgeInsets.only(top: 12),
                 child: Text(
                   '${product.country?.title}, ${product.city?.title}, ${product.state?.title}',
-                  style: Theme.of(context).textTheme.caption,
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
               ),
             ),
@@ -1067,7 +1067,7 @@ class _ProductDetailState extends State<ProductDetail> {
                       children: <Widget>[
                         Text(
                           Translate.of(context).translate('phone'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         Text(
                           product.phone,
@@ -1075,7 +1075,7 @@ class _ProductDetailState extends State<ProductDetail> {
                           overflow: TextOverflow.ellipsis,
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1!
+                              .bodySmall!
                               .copyWith(fontWeight: FontWeight.bold),
                         ),
                       ],
@@ -1120,7 +1120,7 @@ class _ProductDetailState extends State<ProductDetail> {
                       children: <Widget>[
                         Text(
                           Translate.of(context).translate('fax'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         Text(
                           product.fax,
@@ -1128,7 +1128,7 @@ class _ProductDetailState extends State<ProductDetail> {
                           overflow: TextOverflow.ellipsis,
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1!
+                              .bodySmall!
                               .copyWith(fontWeight: FontWeight.bold),
                         ),
                       ],
@@ -1173,7 +1173,7 @@ class _ProductDetailState extends State<ProductDetail> {
                       children: <Widget>[
                         Text(
                           Translate.of(context).translate('email'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         Text(
                           product.email,
@@ -1181,7 +1181,7 @@ class _ProductDetailState extends State<ProductDetail> {
                           overflow: TextOverflow.ellipsis,
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1!
+                              .bodySmall!
                               .copyWith(fontWeight: FontWeight.bold),
                         ),
                       ],
@@ -1226,7 +1226,7 @@ class _ProductDetailState extends State<ProductDetail> {
                       children: <Widget>[
                         Text(
                           Translate.of(context).translate('website'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         Text(
                           product.website,
@@ -1234,7 +1234,7 @@ class _ProductDetailState extends State<ProductDetail> {
                           overflow: TextOverflow.ellipsis,
                           style: Theme.of(context)
                               .textTheme
-                              .bodyText1!
+                              .bodySmall!
                               .copyWith(fontWeight: FontWeight.bold),
                         ),
                       ],
@@ -1280,7 +1280,7 @@ class _ProductDetailState extends State<ProductDetail> {
                         const SizedBox(width: 8),
                         Text(
                           Translate.of(context).translate('open_time'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                       ],
                     ),
@@ -1320,7 +1320,7 @@ class _ProductDetailState extends State<ProductDetail> {
                       children: <Widget>[
                         Text(
                           Translate.of(context).translate(item.key),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         const SizedBox(width: 8),
                         Expanded(
@@ -1328,7 +1328,7 @@ class _ProductDetailState extends State<ProductDetail> {
                             hour,
                             style: Theme.of(context)
                                 .textTheme
-                                .caption!
+                                .bodySmall!
                                 .copyWith(
                                     color:
                                         Theme.of(context).colorScheme.secondary,
@@ -1384,13 +1384,13 @@ class _ProductDetailState extends State<ProductDetail> {
                           children: [
                             Text(
                               Translate.of(context).translate('attachments'),
-                              style: Theme.of(context).textTheme.caption,
+                              style: Theme.of(context).textTheme.bodySmall,
                             ),
                             Text(
                               '${product.attachments.length} ${Translate.of(context).translate('files')}',
                               style: Theme.of(context)
                                   .textTheme
-                                  .bodyText1!
+                                  .bodySmall!
                                   .copyWith(fontWeight: FontWeight.bold),
                             ),
                           ],
@@ -1420,7 +1420,7 @@ class _ProductDetailState extends State<ProductDetail> {
                         Expanded(
                           child: Text(
                             '${item.name}.${item.type}',
-                            style: Theme.of(context).textTheme.caption,
+                            style: Theme.of(context).textTheme.bodySmall,
                             overflow: TextOverflow.ellipsis,
                             maxLines: 1,
                           ),
@@ -1432,7 +1432,7 @@ class _ProductDetailState extends State<ProductDetail> {
                               item.size,
                               style: Theme.of(context)
                                   .textTheme
-                                  .caption!
+                                  .bodySmall!
                                   .copyWith(
                                       color: Theme.of(context)
                                           .colorScheme
@@ -1462,14 +1462,14 @@ class _ProductDetailState extends State<ProductDetail> {
               Translate.of(context).translate(
                 'date_established',
               ),
-              style: Theme.of(context).textTheme.caption,
+              style: Theme.of(context).textTheme.bodySmall,
             ),
             const SizedBox(height: 4),
             Text(
               product.dateEstablish,
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             )
           ],
@@ -1483,14 +1483,14 @@ class _ProductDetailState extends State<ProductDetail> {
           children: <Widget>[
             Text(
               Translate.of(context).translate('price_range'),
-              style: Theme.of(context).textTheme.caption,
+              style: Theme.of(context).textTheme.bodySmall,
             ),
             const SizedBox(height: 4),
             Text(
               "${product.priceMin} - ${product.priceMax}",
               style: Theme.of(context)
                   .textTheme
-                  .subtitle2!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.bold),
             )
           ],
@@ -1529,7 +1529,7 @@ class _ProductDetailState extends State<ProductDetail> {
               Translate.of(context).translate('book_now'),
               style: Theme.of(context)
                   .textTheme
-                  .button!
+                  .bodySmall!
                   .copyWith(color: Theme.of(context).primaryColor),
             ),
           ),
@@ -1548,7 +1548,7 @@ class _ProductDetailState extends State<ProductDetail> {
               Translate.of(context).translate('featured'),
               style: Theme.of(context)
                   .textTheme
-                  .headline6!
+                  .headlineSmall!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -1585,7 +1585,7 @@ class _ProductDetailState extends State<ProductDetail> {
               Translate.of(context).translate('tags'),
               style: Theme.of(context)
                   .textTheme
-                  .headline6!
+                  .headlineSmall!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
@@ -1638,7 +1638,7 @@ class _ProductDetailState extends State<ProductDetail> {
                         const SizedBox(width: 8),
                         Text(
                           Translate.of(context).translate('social_network'),
-                          style: Theme.of(context).textTheme.caption,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                       ],
                     ),
@@ -1720,7 +1720,7 @@ class _ProductDetailState extends State<ProductDetail> {
                       product.category?.title ?? '',
                       style: Theme.of(context)
                           .textTheme
-                          .caption
+                          .bodySmall
                           ?.copyWith(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 4),
@@ -1751,7 +1751,7 @@ class _ProductDetailState extends State<ProductDetail> {
                           const SizedBox(width: 4),
                           Text(
                             "(${product.numRate})",
-                            style: Theme.of(context).textTheme.bodyText1,
+                            style: Theme.of(context).textTheme.bodySmall,
                           ),
                         ],
                       ),
@@ -1778,7 +1778,7 @@ class _ProductDetailState extends State<ProductDetail> {
             const SizedBox(height: 16),
             Text(
               product.description,
-              style: Theme.of(context).textTheme.bodyText1!.copyWith(
+              style: Theme.of(context).textTheme.bodySmall!.copyWith(
                     height: 1.3,
                   ),
             ),
