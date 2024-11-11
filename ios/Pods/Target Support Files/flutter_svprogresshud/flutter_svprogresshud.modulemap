@@ -1,0 +1,6 @@
+framework module flutter_svprogresshud {
+  umbrella header "flutter_svprogresshud-umbrella.h"
+
+  export *
+  module * { export * }
+}

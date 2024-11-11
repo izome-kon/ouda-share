@@ -15,8 +15,8 @@ class HTTPManager {
     _dio = Dio(
       BaseOptions(
         baseUrl: '${Application.domain}/index.php/wp-json',
-        connectTimeout: 30000,
-        receiveTimeout: 30000,
+        connectTimeout: Duration(milliseconds: 30000),
+        receiveTimeout: Duration(milliseconds: 30000),
         contentType: Headers.formUrlEncodedContentType,
         responseType: ResponseType.json,
       ),
@@ -42,7 +42,7 @@ class HTTPManager {
           return handler.next(options);
         },
         onError: (DioError error, handler) async {
-          if (error.type != DioErrorType.response) {
+          if (error.type != DioErrorType.connectionError) {
             return handler.next(error);
           }
 

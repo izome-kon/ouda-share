@@ -262,7 +262,7 @@ class _ProductDetailState extends State<ProductDetail> {
                               alignment: Alignment.center,
                               width: 150,
                               height: 150,
-                              child: QrImage(
+                              child: QrImageView(
                                 data: link,
                                 size: 150,
                                 backgroundColor: Colors.white,
@@ -399,29 +399,29 @@ class _ProductDetailState extends State<ProductDetail> {
                             Navigator.pop(context, "WhatsApp");
                           },
                         ),
-                        AppListTitle(
-                          title: 'Viber',
-                          leading: SizedBox(
-                            height: 32,
-                            width: 32,
-                            child: Image.asset(Images.viber),
-                          ),
-                          onPressed: () {
-                            Navigator.pop(context, "Viber");
-                          },
-                        ),
-                        AppListTitle(
-                          title: 'Telegram',
-                          leading: SizedBox(
-                            height: 32,
-                            width: 32,
-                            child: Image.asset(Images.telegram),
-                          ),
-                          onPressed: () {
-                            Navigator.pop(context, "Telegram");
-                          },
-                          border: false,
-                        )
+                        // AppListTitle(
+                        //   title: 'Viber',
+                        //   leading: SizedBox(
+                        //     height: 32,
+                        //     width: 32,
+                        //     child: Image.asset(Images.viber),
+                        //   ),
+                        //   onPressed: () {
+                        //     Navigator.pop(context, "Viber");
+                        //   },
+                        // ),
+                        // AppListTitle(
+                        //   title: 'Telegram',
+                        //   leading: SizedBox(
+                        //     height: 32,
+                        //     width: 32,
+                        //     child: Image.asset(Images.telegram),
+                        //   ),
+                        //   onPressed: () {
+                        //     Navigator.pop(context, "Telegram");
+                        //   },
+                        //   border: false,
+                        // )
                       ],
                     ),
                   ],
@@ -824,7 +824,7 @@ class _ProductDetailState extends State<ProductDetail> {
             ),
             const SizedBox(height: 8),
             SizedBox(
-              height: 220,
+              height: 230,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -1514,27 +1514,6 @@ class _ProductDetailState extends State<ProductDetail> {
       }
 
       ///Booking button
-      if (product.bookingUse) {
-        booking = InkWell(
-          onTap: _onBooking,
-          child: Container(
-            height: 24,
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
-              color: Theme.of(context).primaryColor.withOpacity(0.3),
-            ),
-            child: Text(
-              Translate.of(context).translate('book_now'),
-              style: Theme.of(context)
-                  .textTheme
-                  .bodySmall!
-                  .copyWith(color: Theme.of(context).primaryColor),
-            ),
-          ),
-        );
-      }
 
       ///Feature
       if (product.features.isNotEmpty) {
@@ -1863,6 +1842,26 @@ class _ProductDetailState extends State<ProductDetail> {
           },
         ),
       ),
+      bottomNavigationBar: Container(
+          child: InkWell(
+        onTap: _onBooking,
+        child: Container(
+          height: 80,
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12),
+            color: Theme.of(context).primaryColor.withOpacity(0.3),
+          ),
+          child: Text(
+            Translate.of(context).translate('book_now'),
+            style: Theme.of(context)
+                .textTheme
+                .bodyLarge!
+                .copyWith(color: Theme.of(context).primaryColor),
+          ),
+        ),
+      )),
     );
   }
 }

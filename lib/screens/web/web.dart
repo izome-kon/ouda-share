@@ -17,7 +17,7 @@ class Web extends StatefulWidget {
 }
 
 class _WebState extends State<Web> {
-  final _cookieManager = CookieManager();
+  final _cookieManager = WebViewCookieManager();
 
   bool _loadCompleted = false;
   bool _receiveCallback = false;
@@ -83,26 +83,55 @@ class _WebState extends State<Web> {
           Container(
             color: Theme.of(context).colorScheme.background,
           ),
-          WebView(
-            initialUrl: widget.web.url,
-            javascriptMode: JavascriptMode.unrestricted,
-            onWebViewCreated: (webViewController) {
-              _controller = webViewController;
-            },
-            onPageStarted: (String url) {
-              SVProgressHUD.show();
-            },
-            onPageFinished: onPageFinished,
-            navigationDelegate: (request) {
-              for (var item in widget.web.callbackUrl) {
-                if (request.url.contains(item)) {
-                  _callbackResult = item;
-                  break;
-                }
-              }
-              return NavigationDecision.navigate;
-            },
-            gestureNavigationEnabled: true,
+          // initialUrl: widget.web.url,
+          //   javascriptMode: JavascriptMode.unrestricted,
+          //   onWebViewCreated: (webViewController) {
+          //     _controller = webViewController;
+          //   },
+          //   onPageStarted: (String url) {
+          //     SVProgressHUD.show();
+          //   },
+          //   onPageFinished: onPageFinished,
+          //   navigationDelegate: (request) {
+          //     for (var item in widget.web.callbackUrl) {
+          //       if (request.url.contains(item)) {
+          //         _callbackResult = item;
+          //         break;
+          //       }
+          //     }
+          //     return NavigationDecision.navigate;
+          //   },
+          //   gestureNavigationEnabled: true,
+
+          //         controller = WebViewController()
+          // ..setJavaScriptMode(JavaScriptMode.unrestricted)
+          // ..setNavigationDelegate(
+          //   NavigationDelegate(
+          //     onProgress: (int progress) {
+          //       // Update loading bar.
+          //     },
+          //     onPageStarted: (String url) {},
+          //     onPageFinished: (String url) {},
+          //     onHttpError: (HttpResponseError error) {},
+          //     onWebResourceError: (WebResourceError error) {},
+          //     onNavigationRequest: (NavigationRequest request) {
+          //       if (request.url.startsWith('https://www.youtube.com/')) {
+          //         return NavigationDecision.prevent;
+          //       }
+          //       return NavigationDecision.navigate;
+          //     },
+          //   ),
+          // )
+          // ..loadRequest(Uri.parse('https://flutter.dev'))
+          WebViewWidget(
+            controller: WebViewController()
+              ..setJavaScriptMode(JavaScriptMode.unrestricted)
+              ..setNavigationDelegate(NavigationDelegate(
+                onPageStarted: (String url) {
+                  SVProgressHUD.show();
+                },
+                onPageFinished: onPageFinished,
+              )),
           ),
         ],
       ),

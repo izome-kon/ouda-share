@@ -72,7 +72,7 @@ class _AppDownloadFileState extends State<AppDownloadFile> {
   ///Download file
   void _openFile() {
     if (_file != null) {
-      OpenFilex.open(_file?.path);
+      OpenFilex.open(_file!.path);
     }
   }
 

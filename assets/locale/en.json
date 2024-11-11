@@ -232,7 +232,7 @@
   "edit_listing": "Update Listing",
   "completed": "Completed",
   "add_more": "Add More",
-  "submit_success_message": "You have submitted data successfully. Your data will be appear on the directory listing application.",
+  "submit_success_message": "You have submitted data successfully. Your data will be appear after admin review.",
   "choose_hours": "Choose hours",
   "start_hour": "Start hour",
   "end_hour": "End hour",

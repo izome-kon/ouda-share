@@ -22,6 +22,7 @@ class DetailStandard extends StatefulWidget {
 class _DetailStandardState extends State<DetailStandard> {
   @override
   void initState() {
+    widget.bookingStyle.adult = 1;
     super.initState();
   }
 
@@ -88,46 +89,46 @@ class _DetailStandardState extends State<DetailStandard> {
           child: Column(
             children: [
               const SizedBox(height: 16),
-              Row(
-                children: [
-                  Expanded(
-                    child: AppPickerItem(
-                      leading: Icon(
-                        Icons.person_outline,
-                        color: Theme.of(context).hintColor,
-                      ),
-                      value: widget.bookingStyle.adult?.toString(),
-                      title: Translate.of(context).translate('adult'),
-                      onPressed: () {
-                        _onPicker(widget.bookingStyle.adult, (value) {
-                          setState(() {
-                            widget.bookingStyle.adult = value;
-                          });
-                        });
-                      },
-                    ),
-                  ),
-                  const SizedBox(width: 16),
-                  Expanded(
-                    child: AppPickerItem(
-                      leading: Icon(
-                        Icons.child_friendly_outlined,
-                        color: Theme.of(context).hintColor,
-                      ),
-                      value: widget.bookingStyle.children?.toString(),
-                      title: Translate.of(context).translate('children'),
-                      onPressed: () {
-                        _onPicker(widget.bookingStyle.children, (value) {
-                          setState(() {
-                            widget.bookingStyle.children = value;
-                          });
-                        });
-                      },
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 16),
+              // Row(
+              //   children: [
+              //     Expanded(
+              //       child: AppPickerItem(
+              //         leading: Icon(
+              //           Icons.person_outline,
+              //           color: Theme.of(context).hintColor,
+              //         ),
+              //         value: widget.bookingStyle.adult?.toString(),
+              //         title: Translate.of(context).translate('adult'),
+              //         onPressed: () {
+              //           _onPicker(widget.bookingStyle.adult, (value) {
+              //             setState(() {
+              //               widget.bookingStyle.adult = value;
+              //             });
+              //           });
+              //         },
+              //       ),
+              //     ),
+              //     const SizedBox(width: 16),
+              //     Expanded(
+              //       child: AppPickerItem(
+              //         leading: Icon(
+              //           Icons.child_friendly_outlined,
+              //           color: Theme.of(context).hintColor,
+              //         ),
+              //         value: widget.bookingStyle.children?.toString(),
+              //         title: Translate.of(context).translate('children'),
+              //         onPressed: () {
+              //           _onPicker(widget.bookingStyle.children, (value) {
+              //             setState(() {
+              //               widget.bookingStyle.children = value;
+              //             });
+              //           });
+              //         },
+              //       ),
+              //     ),
+              //   ],
+              // ),
+              // const SizedBox(height: 16),
               AppPickerItem(
                 leading: Icon(
                   Icons.calendar_today_outlined,

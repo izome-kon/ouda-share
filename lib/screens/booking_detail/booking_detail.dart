@@ -292,7 +292,7 @@ class _BookingDetailState extends State<BookingDetail> {
                         const SizedBox(height: 8),
                         Container(
                           alignment: Alignment.center,
-                          child: QrImage(
+                          child: QrImageView(
                             data: link,
                             size: 150,
                             backgroundColor: Colors.white,

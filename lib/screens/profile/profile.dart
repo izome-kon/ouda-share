@@ -250,7 +250,7 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin {
                                 alignment: Alignment.center,
                                 width: 150,
                                 height: 150,
-                                child: QrImage(
+                                child: QrImageView(
                                   data: link,
                                   size: 150,
                                   backgroundColor: Colors.white,

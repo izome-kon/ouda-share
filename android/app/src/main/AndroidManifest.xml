@@ -7,9 +7,9 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application android:name="${applicationName}"
-        android:label="Listar FluxPro"
+        android:label="Subtle"
         android:usesCleartextTraffic="true"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <meta-data android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDg1evvc68xACuU2RsbBiV5uoF0vwVNM8Y"/>
         <activity

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
+// import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:listar_flutter_pro/blocs/bloc.dart';
 import 'package:listar_flutter_pro/configs/config.dart';
 import 'package:listar_flutter_pro/models/model.dart';
@@ -17,83 +17,83 @@ class Account extends StatefulWidget {
 }
 
 class _AccountState extends State<Account> {
-  BannerAd? _bannerAd;
-  InterstitialAd? _interstitialAd;
+  // BannerAd? _bannerAd;
+  // InterstitialAd? _interstitialAd;
 
   @override
   void initState() {
     super.initState();
-    if (Application.setting.useViewAdmob) {
-      _createBannerAd();
-      _createInterstitialAd();
-    }
+    // if (Application.setting.useViewAdmob) {
+    //   _createBannerAd();
+    //   _createInterstitialAd();
+    // }
   }
 
   @override
   void dispose() {
-    _bannerAd?.dispose();
-    _interstitialAd?.dispose();
+    // _bannerAd?.dispose();
+    // _interstitialAd?.dispose();
     super.dispose();
   }
 
   ///Create BannerAd
-  void _createBannerAd() {
-    final banner = BannerAd(
-      size: AdSize.fullBanner,
-      request: const AdRequest(),
-      adUnitId: Ads.bannerAdUnitId,
-      listener: BannerAdListener(
-        onAdLoaded: (ad) {
-          setState(() {
-            _bannerAd = ad as BannerAd?;
-          });
-        },
-        onAdFailedToLoad: (ad, error) {
-          ad.dispose();
-        },
-        onAdOpened: (ad) {},
-        onAdClosed: (ad) {},
-      ),
-    );
-    banner.load();
-  }
+  // void _createBannerAd() {
+  //   final banner = BannerAd(
+  //     size: AdSize.fullBanner,
+  //     request: const AdRequest(),
+  //     adUnitId: Ads.bannerAdUnitId,
+  //     listener: BannerAdListener(
+  //       onAdLoaded: (ad) {
+  //         setState(() {
+  //           _bannerAd = ad as BannerAd?;
+  //         });
+  //       },
+  //       onAdFailedToLoad: (ad, error) {
+  //         ad.dispose();
+  //       },
+  //       onAdOpened: (ad) {},
+  //       onAdClosed: (ad) {},
+  //     ),
+  //   );
+  //   banner.load();
+  // }
 
   ///Create InterstitialAd
-  void _createInterstitialAd() async {
-    await InterstitialAd.load(
-      adUnitId: Ads.interstitialAdUnitId,
-      request: const AdRequest(),
-      adLoadCallback: InterstitialAdLoadCallback(
-        onAdLoaded: (ad) {
-          _interstitialAd = ad;
-        },
-        onAdFailedToLoad: (error) {},
-      ),
-    );
-  }
+  // void _createInterstitialAd() async {
+  //   await InterstitialAd.load(
+  //     adUnitId: Ads.interstitialAdUnitId,
+  //     request: const AdRequest(),
+  //     adLoadCallback: InterstitialAdLoadCallback(
+  //       onAdLoaded: (ad) {
+  //         _interstitialAd = ad;
+  //       },
+  //       onAdFailedToLoad: (error) {},
+  //     ),
+  //   );
+  // }
 
   ///Show InterstitialAd
-  void _showInterstitialAd() async {
-    if (_interstitialAd != null) {
-      _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
-        onAdShowedFullScreenContent: (ad) {},
-        onAdDismissedFullScreenContent: (ad) {
-          ad.dispose();
-          _createInterstitialAd();
-        },
-        onAdFailedToShowFullScreenContent: (ad, error) {
-          ad.dispose();
-          _createInterstitialAd();
-        },
-      );
-      await _interstitialAd!.show();
-      _interstitialAd = null;
-    }
-  }
+  // void _showInterstitialAd() async {
+  //   if (_interstitialAd != null) {
+  //     _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
+  //       onAdShowedFullScreenContent: (ad) {},
+  //       onAdDismissedFullScreenContent: (ad) {
+  //         ad.dispose();
+  //         _createInterstitialAd();
+  //       },
+  //       onAdFailedToShowFullScreenContent: (ad, error) {
+  //         ad.dispose();
+  //         _createInterstitialAd();
+  //       },
+  //     );
+  //     await _interstitialAd!.show();
+  //     _interstitialAd = null;
+  //   }
+  // }
 
   ///On logout
   void _onLogout() async {
-    _showInterstitialAd();
+    // _showInterstitialAd();
     AppBloc.loginCubit.onLogout();
   }
 
@@ -148,13 +148,13 @@ class _AccountState extends State<Account> {
 
   ///Build Banner Ads
   Widget buildBanner() {
-    if (_bannerAd != null) {
-      return SizedBox(
-        width: _bannerAd!.size.width.toDouble(),
-        height: _bannerAd!.size.height.toDouble(),
-        child: AdWidget(ad: _bannerAd!),
-      );
-    }
+    // if (_bannerAd != null) {
+    //   return SizedBox(
+    //     width: _bannerAd!.size.width.toDouble(),
+    //     height: _bannerAd!.size.height.toDouble(),
+    //     child: AdWidget(ad: _bannerAd!),
+    //   );
+    // }
     return Container();
   }
 

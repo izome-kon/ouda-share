@@ -4,7 +4,7 @@ class WebViewModel {
   final String url;
   final List<String> callbackUrl;
   final String title;
-  final JavascriptMode javascriptMode;
+  final JavaScriptMode javascriptMode;
   final bool gestureNavigationEnabled;
   final bool clearCookie;
 
@@ -12,7 +12,7 @@ class WebViewModel {
     required this.url,
     this.callbackUrl = const [],
     this.title = 'title',
-    this.javascriptMode = JavascriptMode.unrestricted,
+    this.javascriptMode = JavaScriptMode.unrestricted,
     this.gestureNavigationEnabled = true,
     this.clearCookie = false,
   });

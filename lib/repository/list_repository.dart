@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
@@ -154,6 +155,7 @@ class ListRepository {
   static Future<bool> saveProduct(params) async {
     final response = await Api.requestSaveProduct(params);
     AppBloc.messageCubit.onShow(response.message);
+    log(response.message);
     if (response.success) {
       return true;
     }

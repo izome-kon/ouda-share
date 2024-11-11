@@ -95,7 +95,7 @@ class SettingModel {
       minPrice: 0.0,
       maxPrice: 100.0,
       color: [],
-      unit: 'USD',
+      unit: 'EGP',
       startHour: const TimeOfDay(hour: 8, minute: 0),
       endHour: const TimeOfDay(hour: 15, minute: 0),
       useViewAddress: true,

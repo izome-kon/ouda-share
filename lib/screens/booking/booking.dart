@@ -252,34 +252,34 @@ class _BookingState extends State<Booking> {
           _onCalcPrice(form);
         },
       );
-    } else if (form.bookingStyle is DailyBookingModel) {
-      return DetailDaily(
-        bookingStyle: form.bookingStyle as DailyBookingModel,
-        onCalcPrice: () {
-          _onCalcPrice(form);
-        },
-      );
-    } else if (form.bookingStyle is HourlyBookingModel) {
-      return DetailHourly(
-        bookingStyle: form.bookingStyle as HourlyBookingModel,
-        onCalcPrice: () {
-          _onCalcPrice(form);
-        },
-      );
-    } else if (form.bookingStyle is TableBookingModel) {
-      return DetailTable(
-        bookingStyle: form.bookingStyle as TableBookingModel,
-        onCalcPrice: () {
-          _onCalcPrice(form);
-        },
-      );
-    } else if (form.bookingStyle is SlotBookingModel) {
-      return DetailSlot(
-        bookingStyle: form.bookingStyle as SlotBookingModel,
-        onCalcPrice: () {
-          _onCalcPrice(form);
-        },
-      );
+      // } else if (form.bookingStyle is DailyBookingModel) {
+      //   return DetailDaily(
+      //     bookingStyle: form.bookingStyle as DailyBookingModel,
+      //     onCalcPrice: () {
+      //       _onCalcPrice(form);
+      //     },
+      //   );
+      // } else if (form.bookingStyle is HourlyBookingModel) {
+      //   return DetailHourly(
+      //     bookingStyle: form.bookingStyle as HourlyBookingModel,
+      //     onCalcPrice: () {
+      //       _onCalcPrice(form);
+      //     },
+      //   );
+      // } else if (form.bookingStyle is TableBookingModel) {
+      //   return DetailTable(
+      //     bookingStyle: form.bookingStyle as TableBookingModel,
+      //     onCalcPrice: () {
+      //       _onCalcPrice(form);
+      //     },
+      //   );
+      // } else if (form.bookingStyle is SlotBookingModel) {
+      //   return DetailSlot(
+      //     bookingStyle: form.bookingStyle as SlotBookingModel,
+      //     onCalcPrice: () {
+      //       _onCalcPrice(form);
+      //     },
+      //   );
     } else {
       return Container();
     }

@@ -1,6 +1,6 @@
 name: listar_flutter_pro
 description: wem2017.github.io
-version: 1.2.2+69
+version: 1.0.0+1
 environment:
   sdk: ">=2.14.4 <3.0.0"
 dependencies:
@@ -8,46 +8,51 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  cupertino_icons: 1.0.5
-  firebase_core: 2.11.0
-  firebase_messaging: 14.1.2
-  shared_preferences: 2.0.15
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.7.0
+  firebase_messaging: ^15.1.4
+  shared_preferences: ^2.3.3
   intl: 0.17.0
-  bloc: 8.1.0
-  url_launcher: 6.1.7
-  flutter_bloc: 8.1.1
+  bloc: ^8.1.4
+  url_launcher: ^6.3.1
+  flutter_bloc: ^8.1.6
   device_info: 2.0.3
   share: 2.0.4
-  dio: 4.0.6
-  cached_network_image: 3.2.3
-  card_swiper: 2.0.4
-  shimmer: 2.0.0
-  flutter_slidable: 2.0.0
-  image_picker: 0.8.6
-  google_maps_flutter: 2.2.1
-  photo_view: 0.14.0
+  dio: ^5.7.0
+  cached_network_image: ^3.4.1
+  card_swiper: ^3.0.1
+  shimmer: ^3.0.0
+  flutter_slidable: ^3.1.1
+  image_picker: ^1.1.2
+  google_maps_flutter: ^2.9.0
+  photo_view: ^0.15.0
   intro_views_flutter: 3.2.0
-  rxdart: 0.27.7
-  font_awesome_flutter: 10.2.1
+  rxdart: ^0.28.0
+  font_awesome_flutter: ^10.8.0
   flutter_rating_bar: 4.0.1
-  qr_flutter: 4.0.0
+  qr_flutter: ^4.1.0
   qr_code_scanner: 1.0.1
-  dotted_border: 2.0.0+3
-  animations: 2.0.7
-  flutter_colorpicker: 1.0.3
-  flutter_svprogresshud: 1.0.0
-  webview_flutter: 3.0.4
-  showcaseview: 2.0.0+1
-  google_mobile_ads: 2.3.0
-  video_player: 2.4.8
-  path_provider: 2.0.11
-  open_filex: 4.3.1
-  sentry_flutter: 6.17.0
-  location: 4.4.0
+  dotted_border: ^2.1.0
+  animations: ^2.0.11
+  flutter_colorpicker: ^1.1.0
+  flutter_svprogresshud: ^1.1.0
+  webview_flutter: ^4.9.0
+  showcaseview: ^3.0.0
+  # google_mobile_ads: ^5.2.0
+  video_player: ^2.9.2
+  path_provider: ^2.1.5
+  open_filex: ^4.5.0
+  sentry_flutter: ^8.10.1
+  location: ^7.0.1
   package_info_plus:
 
 dependency_overrides:
   intl: any
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.jpg"
 
 flutter:
   assets:
@@ -122,4 +127,5 @@ flutter:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: 2.0.1
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: "^0.14.1"

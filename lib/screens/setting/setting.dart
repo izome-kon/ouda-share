@@ -238,18 +238,18 @@ class _SettingState extends State<Setting> {
                 },
               ),
             ),
-            AppListTitle(
-              title: Translate.of(context).translate('theme'),
-              onPressed: () {
-                _onNavigate(Routes.themeSetting);
-              },
-              trailing: Container(
-                margin: const EdgeInsets.only(right: 8),
-                width: 16,
-                height: 16,
-                color: Theme.of(context).primaryColor,
-              ),
-            ),
+            // AppListTitle(
+            //   title: Translate.of(context).translate('theme'),
+            //   onPressed: () {
+            //     _onNavigate(Routes.themeSetting);
+            //   },
+            //   trailing: Container(
+            //     margin: const EdgeInsets.only(right: 8),
+            //     width: 16,
+            //     height: 16,
+            //     color: Theme.of(context).primaryColor,
+            //   ),
+            // ),
             AppListTitle(
               title: Translate.of(context).translate('dark_mode'),
               onPressed: _onDarkModeSetting,
@@ -273,46 +273,46 @@ class _SettingState extends State<Setting> {
                 ],
               ),
             ),
-            AppListTitle(
-              title: Translate.of(context).translate('font'),
-              onPressed: () {
-                _onNavigate(Routes.fontSetting);
-              },
-              trailing: Row(
-                children: <Widget>[
-                  Text(
-                    AppBloc.themeCubit.state.font,
-                    style: Theme.of(context).textTheme.bodySmall,
-                  ),
-                  RotatedBox(
-                    quarterTurns: AppLanguage.isRTL() ? 2 : 0,
-                    child: const Icon(
-                      Icons.keyboard_arrow_right,
-                      textDirection: TextDirection.ltr,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            AppListTitle(
-              title: Translate.of(context).translate('domain'),
-              onPressed: _onChangeDomain,
-              trailing: Row(
-                children: <Widget>[
-                  Text(
-                    Application.domain,
-                    style: Theme.of(context).textTheme.bodySmall,
-                  ),
-                  RotatedBox(
-                    quarterTurns: AppLanguage.isRTL() ? 2 : 0,
-                    child: const Icon(
-                      Icons.keyboard_arrow_right,
-                      textDirection: TextDirection.ltr,
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            // AppListTitle(
+            //   title: Translate.of(context).translate('font'),
+            //   onPressed: () {
+            //     _onNavigate(Routes.fontSetting);
+            //   },
+            //   trailing: Row(
+            //     children: <Widget>[
+            //       Text(
+            //         AppBloc.themeCubit.state.font,
+            //         style: Theme.of(context).textTheme.bodySmall,
+            //       ),
+            //       RotatedBox(
+            //         quarterTurns: AppLanguage.isRTL() ? 2 : 0,
+            //         child: const Icon(
+            //           Icons.keyboard_arrow_right,
+            //           textDirection: TextDirection.ltr,
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
+            // AppListTitle(
+            //   title: Translate.of(context).translate('domain'),
+            //   onPressed: _onChangeDomain,
+            //   trailing: Row(
+            //     children: <Widget>[
+            //       Text(
+            //         Application.domain,
+            //         style: Theme.of(context).textTheme.bodySmall,
+            //       ),
+            //       RotatedBox(
+            //         quarterTurns: AppLanguage.isRTL() ? 2 : 0,
+            //         child: const Icon(
+            //           Icons.keyboard_arrow_right,
+            //           textDirection: TextDirection.ltr,
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
             AppListTitle(
               title: Translate.of(context).translate('version'),
               onPressed: () {},

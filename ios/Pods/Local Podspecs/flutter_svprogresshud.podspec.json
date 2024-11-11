@@ -1,0 +1,38 @@
+{
+  "name": "flutter_svprogresshud",
+  "version": "0.0.7",
+  "summary": "A clean and lightweight progress HUD for flutter app.",
+  "description": "A new flutter plugin project.",
+  "homepage": "https://github.com/leanflutter/flutter_svprogresshud",
+  "license": {
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "LiJianying": "lijy91@foxmail.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "public_header_files": "Classes/**/*.h",
+  "dependencies": {
+    "Flutter": [
+
+    ]
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "default_subspecs": "SVProgressHUD_Core",
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "i386"
+  },
+  "subspecs": [
+    {
+      "name": "SVProgressHUD_Core",
+      "source_files": "SVProgressHUD/*.{h,m}",
+      "resources": "SVProgressHUD/SVProgressHUD.bundle"
+    }
+  ]
+}
