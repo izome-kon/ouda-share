@@ -488,14 +488,14 @@ class _FilterState extends State<Filter> {
               ],
             ),
             const SizedBox(height: 16),
-            Text(
-              Translate.of(context).translate('business_color'),
-              style: Theme.of(context)
-                  .textTheme
-                  .headlineSmall!
-                  .copyWith(fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8),
+            // Text(
+            //   Translate.of(context).translate('business_color'),
+            //   style: Theme.of(context)
+            //       .textTheme
+            //       .headlineSmall!
+            //       .copyWith(fontWeight: FontWeight.bold),
+            // ),
+            // const SizedBox(height: 8),
             Wrap(
               spacing: 16,
               runSpacing: 8,
@@ -526,14 +526,14 @@ class _FilterState extends State<Filter> {
               }).toList(),
             ),
             const SizedBox(height: 16),
-            Text(
-              Translate.of(context).translate('open_time'),
-              style: Theme.of(context)
-                  .textTheme
-                  .headlineSmall!
-                  .copyWith(fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8),
+            // Text(
+            //   Translate.of(context).translate('open_time'),
+            //   style: Theme.of(context)
+            //       .textTheme
+            //       .headlineSmall!
+            //       .copyWith(fontWeight: FontWeight.bold),
+            // ),
+            // const SizedBox(height: 8),
             Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(

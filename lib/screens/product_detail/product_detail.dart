@@ -1277,11 +1277,11 @@ class _ProductDetailState extends State<ProductDetail> {
                             size: 18,
                           ),
                         ),
-                        const SizedBox(width: 8),
-                        Text(
-                          Translate.of(context).translate('open_time'),
-                          style: Theme.of(context).textTheme.bodySmall,
-                        ),
+                        // const SizedBox(width: 8),
+                        // Text(
+                        //   Translate.of(context).translate('open_time'),
+                        //   style: Theme.of(context).textTheme.bodySmall,
+                        // ),
                       ],
                     ),
                   ),

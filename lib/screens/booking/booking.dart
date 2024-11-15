@@ -78,18 +78,21 @@ class _BookingState extends State<Booking> {
   ///Init data
   void _loadData() async {
     await _bookingCubit.initBooking(widget.id);
+
+    _textPhoneController.text =
+        BlocProvider.of<ProfileCubit>(context).user?.name ?? '';
   }
 
   ///On booking
   void _onOrder(FormSuccess form) async {
     final result = await _bookingCubit.order(
       id: widget.id,
-      firstName: _textFistNameController.text,
-      lastName: _textLastNameController.text,
-      phone: _textPhoneController.text,
-      email: _textEmailController.text,
-      address: _textAddressController.text,
-      message: _textMessageController.text,
+      firstName: AppBloc.userCubit.state?.name ?? '',
+      lastName: AppBloc.userCubit.state?.nickname ?? '',
+      phone: '123456789',
+      email: AppBloc.userCubit.state?.email ?? '',
+      address: 'oudashare',
+      message: 'test',
       form: form,
     );
     if (result.success) {
@@ -185,34 +188,7 @@ class _BookingState extends State<Booking> {
         _active += 1;
       });
     } else if (step == 1) {
-      if (_textFistNameController.text.isEmpty) {
-        _errorFirstName = Translate.of(context).translate('first_name_message');
-      }
-      if (_textLastNameController.text.isEmpty) {
-        _errorLastName = Translate.of(context).translate('last_name_message');
-      }
-      if (_textPhoneController.text.isEmpty) {
-        _errorPhone = Translate.of(context).translate('phone_message');
-      }
-      if (_textEmailController.text.isEmpty) {
-        _errorEmail = Translate.of(context).translate('email_message');
-      }
-      if (_textAddressController.text.isEmpty) {
-        _errorAddress = Translate.of(context).translate('address_message');
-      }
-      setState(() {
-        if (_errorFirstName == null &&
-            _errorLastName == null &&
-            _errorPhone == null &&
-            _errorEmail == null &&
-            _errorAddress == null) {
-          if (form.bookingPayment.use) {
-            _active += 1;
-          } else {
-            _onOrder(form);
-          }
-        }
-      });
+      _onOrder(form);
     } else if (step == 2) {
       _onOrder(form);
     }
@@ -360,58 +336,58 @@ class _BookingState extends State<Booking> {
             },
           ),
           const SizedBox(height: 16),
-          AppTextInput(
-            hintText: Translate.of(context).translate('input_email'),
-            errorText: _errorEmail,
-            controller: _textEmailController,
-            focusNode: _focusEmail,
-            textInputAction: TextInputAction.next,
-            onChanged: (text) {
-              setState(() {
-                _errorEmail = UtilValidator.validate(
-                  _textEmailController.text,
-                  type: ValidateType.email,
-                );
-              });
-            },
-            onSubmitted: (text) {
-              Utils.fieldFocusChange(
-                context,
-                _focusEmail,
-                _focusAddress,
-              );
-            },
-          ),
-          const SizedBox(height: 16),
-          AppTextInput(
-            hintText: Translate.of(context).translate('input_address'),
-            errorText: _errorAddress,
-            controller: _textAddressController,
-            focusNode: _focusAddress,
-            textInputAction: TextInputAction.next,
-            onChanged: (text) {
-              setState(() {
-                _errorAddress = UtilValidator.validate(
-                  _textAddressController.text,
-                );
-              });
-            },
-            onSubmitted: (text) {
-              Utils.fieldFocusChange(
-                context,
-                _focusAddress,
-                _focusMessage,
-              );
-            },
-          ),
-          const SizedBox(height: 16),
-          AppTextInput(
-            maxLines: 6,
-            hintText: Translate.of(context).translate('input_content'),
-            controller: _textMessageController,
-            focusNode: _focusMessage,
-            textInputAction: TextInputAction.done,
-          ),
+          // AppTextInput(
+          //   hintText: Translate.of(context).translate('input_email'),
+          //   errorText: _errorEmail,
+          //   controller: _textEmailController,
+          //   focusNode: _focusEmail,
+          //   textInputAction: TextInputAction.next,
+          //   onChanged: (text) {
+          //     setState(() {
+          //       _errorEmail = UtilValidator.validate(
+          //         _textEmailController.text,
+          //         type: ValidateType.email,
+          //       );
+          //     });
+          //   },
+          //   onSubmitted: (text) {
+          //     Utils.fieldFocusChange(
+          //       context,
+          //       _focusEmail,
+          //       _focusAddress,
+          //     );
+          //   },
+          // ),
+          // const SizedBox(height: 16),
+          // AppTextInput(
+          //   hintText: Translate.of(context).translate('input_address'),
+          //   errorText: _errorAddress,
+          //   controller: _textAddressController,
+          //   focusNode: _focusAddress,
+          //   textInputAction: TextInputAction.next,
+          //   onChanged: (text) {
+          //     setState(() {
+          //       _errorAddress = UtilValidator.validate(
+          //         _textAddressController.text,
+          //       );
+          //     });
+          //   },
+          //   onSubmitted: (text) {
+          //     Utils.fieldFocusChange(
+          //       context,
+          //       _focusAddress,
+          //       _focusMessage,
+          //     );
+          //   },
+          // ),
+          // const SizedBox(height: 16),
+          // AppTextInput(
+          //   maxLines: 6,
+          //   hintText: Translate.of(context).translate('input_content'),
+          //   controller: _textMessageController,
+          //   focusNode: _focusMessage,
+          //   textInputAction: TextInputAction.done,
+          // ),
         ],
       ),
     );
@@ -668,15 +644,15 @@ class _BookingState extends State<Booking> {
     switch (_active) {
       case 0:
         return _buildDetail(form);
+      // case 1:
+      //   return _buildContact();
       case 1:
-        return _buildContact();
-      case 2:
         if (!form.bookingPayment.use) {
           continue success;
         }
         return _buildPayment(form);
       success:
-      case 3:
+      case 2:
         return _buildCompleted();
       default:
         return Container();
@@ -846,10 +822,10 @@ class _BookingState extends State<Booking> {
                 title: Translate.of(context).translate('details'),
                 icon: Icons.calendar_today_outlined,
               ),
-              StepModel(
-                title: Translate.of(context).translate('contact'),
-                icon: Icons.contact_mail_outlined,
-              ),
+              // StepModel(
+              //   title: Translate.of(context).translate('contact'),
+              //   icon: Icons.contact_mail_outlined,
+              // ),
               StepModel(
                 title: Translate.of(context).translate('completed'),
                 icon: Icons.check,
@@ -861,10 +837,10 @@ class _BookingState extends State<Booking> {
                   title: Translate.of(context).translate('details'),
                   icon: Icons.calendar_today_outlined,
                 ),
-                StepModel(
-                  title: Translate.of(context).translate('contact'),
-                  icon: Icons.contact_mail_outlined,
-                ),
+                // StepModel(
+                //   title: Translate.of(context).translate('contact'),
+                //   icon: Icons.contact_mail_outlined,
+                // ),
                 StepModel(
                   title: Translate.of(context).translate('payment'),
                   icon: Icons.payment_outlined,

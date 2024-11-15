@@ -55,6 +55,7 @@ class AppButton extends StatelessWidget {
           return OutlinedButton.icon(
             style: OutlinedButton.styleFrom(
               minimumSize: buttonSize,
+              // backgroundColor: Colors.red,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
@@ -106,6 +107,7 @@ class AppButton extends StatelessWidget {
           return TextButton.icon(
             onPressed: disabled ? null : onPressed,
             icon: icon!,
+            // style: TextButton.styleFrom(backgroundColor: Colors.red),
             label: Row(
               mainAxisSize: mainAxisSize,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -123,6 +125,7 @@ class AppButton extends StatelessWidget {
           );
         }
         return TextButton(
+          // style: TextButton.styleFrom(backgroundColor: Colors.red),
           onPressed: disabled ? null : onPressed,
           child: Row(
             mainAxisSize: mainAxisSize,
@@ -145,6 +148,7 @@ class AppButton extends StatelessWidget {
             onPressed: disabled ? null : onPressed,
             style: ElevatedButton.styleFrom(
               minimumSize: buttonSize,
+              // backgroundColor: Theme.of(context).primaryColor,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
@@ -169,6 +173,7 @@ class AppButton extends StatelessWidget {
           onPressed: disabled ? null : onPressed,
           style: ElevatedButton.styleFrom(
             minimumSize: buttonSize,
+            backgroundColor: Theme.of(context).primaryColor,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8),
             ),

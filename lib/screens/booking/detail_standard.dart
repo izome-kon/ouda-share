@@ -23,6 +23,7 @@ class _DetailStandardState extends State<DetailStandard> {
   @override
   void initState() {
     widget.bookingStyle.adult = 1;
+    widget.bookingStyle.startTime = TimeOfDay.now();
     super.initState();
   }
 
@@ -138,16 +139,16 @@ class _DetailStandardState extends State<DetailStandard> {
                 title: Translate.of(context).translate('date'),
                 onPressed: _onDatePicker,
               ),
-              const SizedBox(height: 16),
-              AppPickerItem(
-                leading: Icon(
-                  Icons.more_time,
-                  color: Theme.of(context).hintColor,
-                ),
-                value: widget.bookingStyle.startTime?.viewTime,
-                title: Translate.of(context).translate('time'),
-                onPressed: _onTimePicker,
-              ),
+              // const SizedBox(height: 16),
+              // AppPickerItem(
+              //   leading: Icon(
+              //     Icons.more_time,
+              //     color: Theme.of(context).hintColor,
+              //   ),
+              //   value: widget.bookingStyle.startTime?.viewTime,
+              //   title: Translate.of(context).translate('time'),
+              //   onPressed: _onTimePicker,
+              // ),
               const SizedBox(height: 8),
               const Divider(),
               const SizedBox(height: 8),

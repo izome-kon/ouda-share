@@ -481,7 +481,7 @@ class _ListProductState extends State<ListProduct> {
                           return Container(
                             padding: const EdgeInsets.only(top: 4, bottom: 4),
                             child: Container(
-                              padding: const EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(4),
                               decoration: BoxDecoration(
                                 color: Theme.of(context).colorScheme.background,
                                 borderRadius: const BorderRadius.all(

@@ -318,7 +318,7 @@ class AppProductItem extends StatelessWidget {
                   );
                 },
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 2),
               Text(
                 item?.category?.title ?? '',
                 style: Theme.of(context)
@@ -326,7 +326,7 @@ class AppProductItem extends StatelessWidget {
                     .bodySmall!
                     .copyWith(fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 4),
+              const SizedBox(height: 2),
               Text(
                 item!.title,
                 maxLines: 1,
@@ -335,7 +335,7 @@ class AppProductItem extends StatelessWidget {
                     .titleMedium!
                     .copyWith(fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 4),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
@@ -382,7 +382,7 @@ class AppProductItem extends StatelessWidget {
               children: <Widget>[
                 Container(
                   width: 120,
-                  height: 140,
+                  height: 150,
                   decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(8),
@@ -461,7 +461,7 @@ class AppProductItem extends StatelessWidget {
                     imageBuilder: (context, imageProvider) {
                       return Container(
                         width: 120,
-                        height: 140,
+                        height: 160,
                         decoration: BoxDecoration(
                           image: DecorationImage(
                             image: imageProvider,
@@ -492,7 +492,7 @@ class AppProductItem extends StatelessWidget {
                       return AppPlaceholder(
                         child: Container(
                           width: 120,
-                          height: 140,
+                          height: 160,
                           decoration: const BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.only(
@@ -507,7 +507,7 @@ class AppProductItem extends StatelessWidget {
                       return AppPlaceholder(
                         child: Container(
                           width: 120,
-                          height: 140,
+                          height: 160,
                           decoration: const BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.only(
@@ -532,7 +532,7 @@ class AppProductItem extends StatelessWidget {
                                     fontWeight: FontWeight.bold,
                                   ),
                         ),
-                        const SizedBox(height: 4),
+                        const SizedBox(height: 2),
                         Text(
                           item!.title,
                           maxLines: 1,
@@ -566,7 +566,7 @@ class AppProductItem extends StatelessWidget {
                             ),
                           ],
                         ),
-                        const SizedBox(height: 8),
+                        const SizedBox(height: 4),
                         Row(
                           children: <Widget>[
                             Icon(
@@ -584,7 +584,7 @@ class AppProductItem extends StatelessWidget {
                             )
                           ],
                         ),
-                        const SizedBox(height: 4),
+                        const SizedBox(height: 2),
                         Row(
                           children: <Widget>[
                             Icon(
@@ -592,7 +592,7 @@ class AppProductItem extends StatelessWidget {
                               size: 12,
                               color: Theme.of(context).primaryColor,
                             ),
-                            const SizedBox(width: 4),
+                            const SizedBox(width: 2),
                             Expanded(
                               child: Text(item!.phone,
                                   maxLines: 1,
