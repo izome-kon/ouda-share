@@ -7,7 +7,7 @@ import 'package:listar_flutter_pro/configs/config.dart';
 import 'package:listar_flutter_pro/models/model.dart';
 import 'package:listar_flutter_pro/utils/utils.dart';
 import 'package:listar_flutter_pro/widgets/widget.dart';
-import 'package:share/share.dart';
+import 'package:share_plus/share_plus.dart';
 
 class WishList extends StatefulWidget {
   const WishList({Key? key}) : super(key: key);

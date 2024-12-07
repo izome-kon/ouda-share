@@ -12,7 +12,7 @@ import 'package:listar_flutter_pro/models/model.dart';
 import 'package:listar_flutter_pro/utils/utils.dart';
 import 'package:listar_flutter_pro/widgets/widget.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:share/share.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProductDetail extends StatefulWidget {

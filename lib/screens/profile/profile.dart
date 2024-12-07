@@ -14,7 +14,7 @@ import 'package:listar_flutter_pro/screens/profile/profile_tab.dart';
 import 'package:listar_flutter_pro/utils/utils.dart';
 import 'package:listar_flutter_pro/widgets/widget.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:share/share.dart';
+import 'package:share_plus/share_plus.dart';
 
 class Profile extends StatefulWidget {
   final UserModel user;

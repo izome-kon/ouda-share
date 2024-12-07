@@ -17,7 +17,6 @@ class AppLanguage {
         return 'English';
       case 'ar':
         return 'Arabic';
-
       default:
         return 'Unknown';
     }
