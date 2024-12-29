@@ -1,6 +1,6 @@
 name: listar_flutter_pro
 description: wem2017.github.io
-version: 1.0.0+1
+version: 1.0.1+2
 environment:
   sdk: ">=2.14.4 <3.0.0"
 dependencies:
@@ -52,7 +52,7 @@ dependency_overrides:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/images/logo.jpg"
+  image_path: "assets/images/logo.png"
 
 flutter:
   assets:

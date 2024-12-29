@@ -39,12 +39,12 @@ class _IntroState extends State<Intro> {
           Icons.shop,
           color: Colors.white,
         ),
-        body: Text(
-          "Favorite brands and hottest trends.",
-          style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                color: Colors.white,
-              ),
-        ),
+        // body: Text(
+        //   "Favorite brands and hottest trends.",
+        //   style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+        //         color: Colors.white,
+        //       ),
+        // ),
         title: Text(
           Translate.of(context).translate('shopping'),
           style: Theme.of(context)
@@ -63,13 +63,13 @@ class _IntroState extends State<Intro> {
           Icons.phonelink,
           color: Colors.white,
         ),
-        body: Text(
-          Translate.of(context).translate('shopping_intro'),
-          style: Theme.of(context)
-              .textTheme
-              .headlineSmall!
-              .copyWith(color: Colors.white),
-        ),
+        // body: Text(
+        //   Translate.of(context).translate('shopping_intro'),
+        //   style: Theme.of(context)
+        //       .textTheme
+        //       .headlineSmall!
+        //       .copyWith(color: Colors.white),
+        // ),
         title: Text(
           Translate.of(context).translate('payment'),
           style: Theme.of(context)
@@ -88,13 +88,13 @@ class _IntroState extends State<Intro> {
           Icons.home,
           color: Colors.white,
         ),
-        body: Text(
-          Translate.of(context).translate('payment_intro'),
-          style: Theme.of(context)
-              .textTheme
-              .headlineSmall!
-              .copyWith(color: Colors.white),
-        ),
+        // body: Text(
+        //   Translate.of(context).translate('payment_intro'),
+        //   style: Theme.of(context)
+        //       .textTheme
+        //       .headlineSmall!
+        //       .copyWith(color: Colors.white),
+        // ),
         title: Text(
           Translate.of(context).translate('location'),
           style: Theme.of(context)
