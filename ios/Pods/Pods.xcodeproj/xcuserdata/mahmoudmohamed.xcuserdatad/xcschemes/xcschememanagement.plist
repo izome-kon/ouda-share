@@ -119,7 +119,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>device_info.xcscheme</key>
+		<key>device_info_plus-device_info_plus_privacy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>device_info_plus.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -214,7 +219,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>share.xcscheme</key>
+		<key>share_plus-share_plus_privacy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>share_plus.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
